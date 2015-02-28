@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>080D39D9-5EE2-4614-9244-9A2FC372EEAE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Profile2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BCA9B3E2005FAE06404DF4940D96A64A99C78823</key>
+		<string>github.com:Tom-Sesselmann/ga-mob-thomas-sesselmann.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Week1/Profile2/Profile2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BCA9B3E2005FAE06404DF4940D96A64A99C78823</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Tom-Sesselmann/ga-mob-thomas-sesselmann.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BCA9B3E2005FAE06404DF4940D96A64A99C78823</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BCA9B3E2005FAE06404DF4940D96A64A99C78823</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ga-mob-thomas-sesselmann</string>
+		</dict>
+	</array>
+</dict>
+</plist>
