@@ -78,7 +78,7 @@
         <!--My Profile-->
         <scene sceneID="Ncy-MT-Fsk">
             <objects>
-                <viewController title="My Profile" id="6qD-dd-AGA" sceneMemberID="viewController">
+                <viewController title="My Profile" id="6qD-dd-AGA" customClass="MyProfileVC" customModule="Profile2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FVN-M2-1Mg"/>
                         <viewControllerLayoutGuide type="bottom" id="QHR-ml-fpc"/>
@@ -216,8 +216,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JB-g8-RJR">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZN-52-5YZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZN-52-5YZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="226"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="210" id="AQx-FX-guh"/>
@@ -232,8 +232,8 @@
                                                     </mask>
                                                 </variation>
                                             </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="GoalImage" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-xl-eO2">
-                                                <rect key="frame" x="193.5" y="210" width="213" height="213"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoalImage" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-xl-eO2">
+                                                <rect key="frame" x="193" y="226" width="213" height="213"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yM1-xl-eO2" secondAttribute="height" multiplier="1:1" id="iqC-bQ-HuQ"/>
                                                 </constraints>
@@ -277,70 +277,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Hf-PZ-dGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2534" y="381"/>
-        </scene>
-        <!--Old Goals-->
-        <scene sceneID="5qH-2N-Rys">
-            <objects>
-                <viewController title="Old Goals" id="Rlf-0q-A2b" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p1Q-Ue-B0C"/>
-                        <viewControllerLayoutGuide type="bottom" id="8HS-jh-ZTQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oEY-zg-l7c">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahP-tR-yMg">
-                                <rect key="frame" x="16" y="64" width="568" height="536"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoalImage" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-kx-ugA">
-                                        <rect key="frame" x="156" y="249.5" width="213" height="213"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-gW-btG">
-                                        <rect key="frame" x="0.0" y="0.0" width="568" height="250"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="0Wm-fo-Qee"/>
-                                            <constraint firstAttribute="height" constant="250" id="H0P-F4-UDu"/>
-                                        </constraints>
-                                        <string key="text">I've tried learning how to write iOS apps several times and each time I've become too overwhelmed with the size of the SDK and the complicated process involving provisioning profile and certificates. Already in the first week of this course, I feel like I have a much better understanding of building iOS apps. Hopefully by the end of the course we'll be able to build full SpriteKit games and maybe even Apple Watch Apps!</string>
-                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="0Wm-fo-Qee"/>
-                                            </mask>
-                                        </variation>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="xzB-gW-btG" secondAttribute="width" id="6Wj-fH-oi2"/>
-                                    <constraint firstItem="0Lf-kx-ugA" firstAttribute="top" secondItem="xzB-gW-btG" secondAttribute="bottom" id="FK0-ao-CN2"/>
-                                    <constraint firstAttribute="trailing" secondItem="xzB-gW-btG" secondAttribute="trailing" id="Ix0-A9-jta"/>
-                                    <constraint firstItem="xzB-gW-btG" firstAttribute="leading" secondItem="ahP-tR-yMg" secondAttribute="leading" id="a2N-cD-ftw"/>
-                                    <constraint firstAttribute="centerX" secondItem="0Lf-kx-ugA" secondAttribute="centerX" constant="21" id="iWX-0q-fOe"/>
-                                    <constraint firstItem="xzB-gW-btG" firstAttribute="top" secondItem="ahP-tR-yMg" secondAttribute="top" id="kVo-l1-5VW"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ix0-A9-jta"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ahP-tR-yMg" secondAttribute="trailing" id="1K0-r6-COK"/>
-                            <constraint firstItem="ahP-tR-yMg" firstAttribute="leading" secondItem="oEY-zg-l7c" secondAttribute="leadingMargin" id="5S4-z8-lbq"/>
-                            <constraint firstItem="ahP-tR-yMg" firstAttribute="top" secondItem="p1Q-Ue-B0C" secondAttribute="bottom" id="5Zh-lD-Imf"/>
-                            <constraint firstItem="8HS-jh-ZTQ" firstAttribute="top" secondItem="ahP-tR-yMg" secondAttribute="bottom" id="EQC-yq-7sW"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3b9-J5-bLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3220" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dkL-QD-gJ2">

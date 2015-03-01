@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93ACD691AA2CF9A00046373 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93ACD681AA2CF9A00046373 /* MyProfileVC.swift */; };
 		E94C8EEC1AA17D800055DFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94C8EEB1AA17D800055DFBE /* AppDelegate.swift */; };
 		E94C8EEE1AA17D800055DFBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94C8EED1AA17D800055DFBE /* ViewController.swift */; };
 		E94C8EF11AA17D800055DFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94C8EEF1AA17D800055DFBE /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E93ACD681AA2CF9A00046373 /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		E94C8EE61AA17D800055DFBE /* Profile2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94C8EEA1AA17D800055DFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94C8EEB1AA17D800055DFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				E94C8EEB1AA17D800055DFBE /* AppDelegate.swift */,
 				E94C8EED1AA17D800055DFBE /* ViewController.swift */,
 				E94C8EEF1AA17D800055DFBE /* Main.storyboard */,
+				E93ACD681AA2CF9A00046373 /* MyProfileVC.swift */,
 				E94C8EF21AA17D800055DFBE /* Images.xcassets */,
 				E94C8EF41AA17D800055DFBE /* LaunchScreen.xib */,
 				E94C8EE91AA17D800055DFBE /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93ACD691AA2CF9A00046373 /* MyProfileVC.swift in Sources */,
 				E94C8EEE1AA17D800055DFBE /* ViewController.swift in Sources */,
 				E94C8EEC1AA17D800055DFBE /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				E94C8F071AA17D800055DFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E94C8F081AA17D800055DFBE /* Build configuration list for PBXNativeTarget "Profile2Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				E94C8F0A1AA17D800055DFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
