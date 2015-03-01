@@ -30,7 +30,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fs-qr-nHZ">
-                                <rect key="frame" x="16" y="385" width="568" height="30"/>
+                                <rect key="frame" x="16" y="380" width="568" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <segue destination="6qD-dd-AGA" kind="show" id="YUD-Nr-NHh"/>
@@ -55,7 +55,7 @@
                             <constraint firstItem="xGV-6H-MzG" firstAttribute="top" secondItem="YGz-nz-MDZ" secondAttribute="bottom" id="TA2-2L-ig8"/>
                             <constraint firstAttribute="centerY" secondItem="xGV-6H-MzG" secondAttribute="centerY" multiplier="1.7" id="X8V-T0-AMJ"/>
                             <constraint firstItem="xGV-6H-MzG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="chg-fT-UKz"/>
-                            <constraint firstItem="5fs-qr-nHZ" firstAttribute="top" secondItem="JcW-q2-pYN" secondAttribute="bottom" constant="20" id="gCH-jH-QsJ"/>
+                            <constraint firstItem="5fs-qr-nHZ" firstAttribute="top" secondItem="JcW-q2-pYN" secondAttribute="bottom" constant="15" id="gCH-jH-QsJ"/>
                             <constraint firstItem="5fs-qr-nHZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pC7-4N-Fcq"/>
                             <constraint firstItem="JcW-q2-pYN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qIh-hO-qsl"/>
                             <constraint firstItem="YGz-nz-MDZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="rB8-0s-GU3"/>
@@ -88,10 +88,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYx-wN-g26">
-                                <rect key="frame" x="16" y="118.5" width="568" height="30"/>
+                                <rect key="frame" x="16" y="132.5" width="568" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="mK5-Fv-TOA"/>
+                                    <constraint firstAttribute="height" constant="44" id="mK5-Fv-TOA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Info"/>
@@ -100,10 +100,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PI-jO-ieT">
-                                <rect key="frame" x="16" y="153.5" width="568" height="30"/>
+                                <rect key="frame" x="16" y="181.5" width="568" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="vuV-f3-do3"/>
+                                    <constraint firstAttribute="height" constant="44" id="vuV-f3-do3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Goals"/>
@@ -112,17 +112,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tom's First App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keG-ge-DQS">
-                                <rect key="frame" x="16" y="84" width="568" height="30"/>
+                                <rect key="frame" x="16" y="84" width="568" height="44"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="4kI-Vp-4CF"/>
+                                    <constraint firstAttribute="height" constant="44" id="4kI-Vp-4CF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="WXv-Xa-GaM">
-                                <rect key="frame" x="97.5" y="188.5" width="406.5" height="406.5"/>
+                                <rect key="frame" x="118.5" y="230.5" width="364.5" height="364.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WXv-Xa-GaM" secondAttribute="height" multiplier="1:1" id="bwp-UB-2MO"/>
                                 </constraints>
@@ -163,21 +163,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-z2-Acl">
-                                <rect key="frame" x="16" y="84" width="568" height="496"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-z2-Acl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Hi, my name is Thomas Sesselmann. I am 24 and currently working at Blake Education. I'm going to keep this bio short since there seems to be a bug with Text View objects not displaying text properly :( I have programming experience with CoffeeScript, JavaScript, Python, C++ and Java. I like playing soccer, going out to nice restaurants and having a few beers around a BBQ.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XHa-z2-Acl" secondAttribute="trailing" id="Lnc-sf-fe1"/>
+                            <constraint firstAttribute="trailing" secondItem="XHa-z2-Acl" secondAttribute="trailing" id="Lnc-sf-fe1"/>
                             <constraint firstItem="XHa-z2-Acl" firstAttribute="top" secondItem="6IJ-rM-b7O" secondAttribute="bottom" id="Lrx-Jh-VvM"/>
-                            <constraint firstItem="XHa-z2-Acl" firstAttribute="leading" secondItem="wJ1-3w-7zc" secondAttribute="leadingMargin" id="c7l-dU-PLE"/>
-                            <constraint firstItem="tsh-F4-rW9" firstAttribute="top" secondItem="XHa-z2-Acl" secondAttribute="bottom" constant="20" id="hY5-0o-ci5"/>
-                            <constraint firstItem="XHa-z2-Acl" firstAttribute="top" secondItem="6IJ-rM-b7O" secondAttribute="bottom" constant="20" id="wok-qm-HFh"/>
+                            <constraint firstItem="XHa-z2-Acl" firstAttribute="leading" secondItem="wJ1-3w-7zc" secondAttribute="leading" id="c7l-dU-PLE"/>
+                            <constraint firstItem="tsh-F4-rW9" firstAttribute="top" secondItem="XHa-z2-Acl" secondAttribute="bottom" id="hY5-0o-ci5"/>
+                            <constraint firstItem="XHa-z2-Acl" firstAttribute="top" secondItem="6IJ-rM-b7O" secondAttribute="bottom" id="wok-qm-HFh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -213,18 +213,18 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoF-79-K6h">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JB-g8-RJR">
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JB-g8-RJR">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZN-52-5YZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="226"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="166.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="210" id="AQx-FX-guh"/>
                                                 </constraints>
                                                 <string key="text">I've tried learning how to write iOS apps several times and each time I've become too overwhelmed with the size of the SDK and the complicated process involving provisioning profile and certificates. Already in the first week of this course, I feel like I have a much better understanding of building iOS apps. Hopefully by the end of the course we'll be able to build full SpriteKit games and maybe even Apple Watch Apps!</string>
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -233,7 +233,7 @@
                                                 </variation>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoalImage" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-xl-eO2">
-                                                <rect key="frame" x="193" y="226" width="213" height="213"/>
+                                                <rect key="frame" x="193" y="166.5" width="213" height="213"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yM1-xl-eO2" secondAttribute="height" multiplier="1:1" id="iqC-bQ-HuQ"/>
                                                 </constraints>
