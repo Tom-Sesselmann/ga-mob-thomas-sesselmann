@@ -108,7 +108,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Goals"/>
                                 <connections>
-                                    <segue destination="IZY-Qf-vmK" kind="show" id="dDk-mo-Wpz"/>
+                                    <segue destination="pfE-Eb-56s" kind="show" id="dDk-mo-Wpz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tom's First App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keG-ge-DQS">
@@ -167,7 +167,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Hi, my name is Thomas Sesselmann. I am 24 and currently working at Blake Education. I'm going to keep this bio short since there seems to be a bug with Text View objects not displaying text properly :( I have programming experience with CoffeeScript, JavaScript, Python, C++ and Java. I like playing soccer, going out to nice restaurants and having a few beers around a BBQ.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -177,7 +177,7 @@
                             <constraint firstItem="XHa-z2-Acl" firstAttribute="top" secondItem="6IJ-rM-b7O" secondAttribute="bottom" id="Lrx-Jh-VvM"/>
                             <constraint firstItem="XHa-z2-Acl" firstAttribute="leading" secondItem="wJ1-3w-7zc" secondAttribute="leading" id="c7l-dU-PLE"/>
                             <constraint firstItem="tsh-F4-rW9" firstAttribute="top" secondItem="XHa-z2-Acl" secondAttribute="bottom" id="hY5-0o-ci5"/>
-                            <constraint firstItem="XHa-z2-Acl" firstAttribute="top" secondItem="6IJ-rM-b7O" secondAttribute="bottom" id="wok-qm-HFh"/>
+                            <constraint firstItem="XHa-z2-Acl" firstAttribute="top" secondItem="6IJ-rM-b7O" secondAttribute="top" id="wok-qm-HFh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -196,7 +196,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eP6-ch-FEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tBw-GF-cuD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2534" y="1103"/>
+            <point key="canvasLocation" x="2863" y="1247"/>
         </scene>
         <!--Goals-->
         <scene sceneID="A7x-VK-AZy">
@@ -217,14 +217,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZN-52-5YZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="166.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="226"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="210" id="AQx-FX-guh"/>
                                                 </constraints>
                                                 <string key="text">I've tried learning how to write iOS apps several times and each time I've become too overwhelmed with the size of the SDK and the complicated process involving provisioning profile and certificates. Already in the first week of this course, I feel like I have a much better understanding of building iOS apps. Hopefully by the end of the course we'll be able to build full SpriteKit games and maybe even Apple Watch Apps!</string>
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -233,7 +233,7 @@
                                                 </variation>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoalImage" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-xl-eO2">
-                                                <rect key="frame" x="193" y="166.5" width="213" height="213"/>
+                                                <rect key="frame" x="193" y="226" width="213" height="213"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yM1-xl-eO2" secondAttribute="height" multiplier="1:1" id="iqC-bQ-HuQ"/>
                                                 </constraints>
@@ -267,16 +267,23 @@
                         <constraints>
                             <constraint firstItem="4JB-g8-RJR" firstAttribute="width" secondItem="uOk-rb-pKR" secondAttribute="width" id="6aD-SB-QVD"/>
                             <constraint firstItem="GoF-79-K6h" firstAttribute="leading" secondItem="uOk-rb-pKR" secondAttribute="leading" id="Hqd-2Y-EkN"/>
+                            <constraint firstItem="GoF-79-K6h" firstAttribute="top" secondItem="bVM-Pc-079" secondAttribute="top" id="Qft-w9-xha"/>
                             <constraint firstItem="4JB-g8-RJR" firstAttribute="height" secondItem="uOk-rb-pKR" secondAttribute="height" priority="250" id="XmZ-ff-m9a"/>
                             <constraint firstAttribute="trailing" secondItem="GoF-79-K6h" secondAttribute="trailing" id="Y8e-JC-NI8"/>
                             <constraint firstItem="oVt-6H-PQM" firstAttribute="top" secondItem="GoF-79-K6h" secondAttribute="bottom" id="o0E-yk-cir"/>
-                            <constraint firstItem="GoF-79-K6h" firstAttribute="top" secondItem="bVM-Pc-079" secondAttribute="bottom" id="pxQ-p2-lOC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9vN-tX-ohT">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="Ng7-9S-gQU">
+                            <connections>
+                                <segue destination="eLV-tY-lWs" kind="show" id="iqe-po-FsN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Hf-PZ-dGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534" y="381"/>
+            <point key="canvasLocation" x="3346" y="381"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dkL-QD-gJ2">
@@ -314,9 +321,30 @@
             </objects>
             <point key="canvasLocation" x="1811" y="1103"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vWh-Pr-ta5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pfE-Eb-56s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SjA-E7-HRn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IZY-Qf-vmK" kind="relationship" relationship="rootViewController" id="PA5-p4-8bu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpp-Gt-WXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="381"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GoalImage" width="213" height="213"/>
         <image name="ProfileImage" width="659" height="659"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iqe-po-FsN"/>
+    </inferredMetricsTieBreakers>
 </document>
