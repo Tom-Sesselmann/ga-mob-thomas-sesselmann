@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nX-Xp-tfZ">
-                                <rect key="frame" x="155" y="200" width="150" height="90"/>
+                                <rect key="frame" x="150" y="200" width="150" height="90"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="+/-">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,18 +33,40 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vw-XW-fDr">
+                                <rect key="frame" x="300" y="200" width="150" height="90"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="top" secondItem="5nX-Xp-tfZ" secondAttribute="top" constant="-200" id="Dh9-bW-99v"/>
+                            <constraint firstItem="5vw-XW-fDr" firstAttribute="leading" secondItem="5nX-Xp-tfZ" secondAttribute="trailing" id="3k8-9C-Ise"/>
+                            <constraint firstItem="Brl-pj-ZeZ" firstAttribute="height" secondItem="5nX-Xp-tfZ" secondAttribute="height" id="4ja-VV-CW8"/>
+                            <constraint firstItem="Brl-pj-ZeZ" firstAttribute="top" secondItem="5nX-Xp-tfZ" secondAttribute="top" id="8xS-Mm-THC"/>
+                            <constraint firstItem="Brl-pj-ZeZ" firstAttribute="width" secondItem="5nX-Xp-tfZ" secondAttribute="width" id="JCb-ya-8dk"/>
                             <constraint firstItem="Brl-pj-ZeZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="LbL-4e-xwV"/>
                             <constraint firstItem="5nX-Xp-tfZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="V7E-zN-48V"/>
+                            <constraint firstItem="5nX-Xp-tfZ" firstAttribute="leading" secondItem="Brl-pj-ZeZ" secondAttribute="trailing" id="WEM-V6-V8R"/>
                             <constraint firstItem="Brl-pj-ZeZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="YeJ-LU-b3r"/>
                             <constraint firstItem="5nX-Xp-tfZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="d1i-Im-T5P"/>
                             <constraint firstAttribute="top" secondItem="Brl-pj-ZeZ" secondAttribute="top" constant="-200" id="fqs-hk-Kyh"/>
                             <constraint firstAttribute="leading" secondItem="Brl-pj-ZeZ" secondAttribute="leading" id="nqa-f1-UAK"/>
+                            <constraint firstItem="5vw-XW-fDr" firstAttribute="width" secondItem="5nX-Xp-tfZ" secondAttribute="width" id="oPa-ZA-IKO"/>
+                            <constraint firstItem="5vw-XW-fDr" firstAttribute="top" secondItem="5nX-Xp-tfZ" secondAttribute="top" id="q6u-qJ-f5h"/>
+                            <constraint firstItem="5vw-XW-fDr" firstAttribute="height" secondItem="5nX-Xp-tfZ" secondAttribute="height" id="tLf-E3-dFz"/>
                             <constraint firstAttribute="leading" secondItem="5nX-Xp-tfZ" secondAttribute="leading" constant="-155" id="wfv-eY-XrL"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="V7E-zN-48V"/>
+                                <exclude reference="d1i-Im-T5P"/>
+                                <exclude reference="wfv-eY-XrL"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
