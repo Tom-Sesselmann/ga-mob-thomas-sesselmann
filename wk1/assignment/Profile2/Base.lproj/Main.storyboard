@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HnU-y8-fhi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HnU-y8-fhi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -319,7 +319,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p0-s9-hed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811" y="1103"/>
+            <point key="canvasLocation" x="1811" y="1151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vWh-Pr-ta5">
@@ -345,6 +345,6 @@
         <image name="ProfileImage" width="659" height="659"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iqe-po-FsN"/>
+        <segue reference="3u5-tu-BIw"/>
     </inferredMetricsTieBreakers>
 </document>

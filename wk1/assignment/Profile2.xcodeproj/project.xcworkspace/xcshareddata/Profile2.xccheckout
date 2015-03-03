@@ -14,7 +14,7 @@
 		<string>github.com:Tom-Sesselmann/ga-mob-thomas-sesselmann.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Week1/Profile2/Profile2.xcodeproj</string>
+	<string>wk1/assignment/Profile2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BCA9B3E2005FAE06404DF4940D96A64A99C78823</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>BCA9B3E2005FAE06404DF4940D96A64A99C78823</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ga-mob-thomas-sesselmann</string>
+			<string>GA</string>
 		</dict>
 	</array>
 </dict>
