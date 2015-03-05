@@ -14,11 +14,11 @@ struct button {
     button(name: "7",   colour: UIColor.lightGrayColor()),
     button(name: "8",   colour: UIColor.lightGrayColor()),
     button(name: "9",   colour: UIColor.lightGrayColor()),
-    button(name: "✕",   colour: UIColor.orangeColor()),
+    button(name: "×",   colour: UIColor.orangeColor()),
     button(name: "4",   colour: UIColor.lightGrayColor()),
     button(name: "5",   colour: UIColor.lightGrayColor()),
     button(name: "6",   colour: UIColor.lightGrayColor()),
-    button(name: "-",   colour: UIColor.orangeColor()),
+    button(name: "−",   colour: UIColor.orangeColor()),
     button(name: "1",   colour: UIColor.lightGrayColor()),
     button(name: "2",   colour: UIColor.lightGrayColor()),
     button(name: "3",   colour: UIColor.lightGrayColor()),
@@ -39,7 +39,16 @@ struct button {
     
     let button = UIButton()
     button.setTitle(data.name, forState: .Normal)
+    button.titleLabel!.font =  UIFont(name: "HelveticaNeue-Thin", size: 30)
     button.backgroundColor = data.colour
+    button.layer.borderWidth = 0.4
+    
+    if data.colour == UIColor.orangeColor() {
+        button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+    } else {
+        button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+    }
+    
     if data.name == "0" {
         button.frame = CGRectMake(x, y, width * 2, width)
         x += width

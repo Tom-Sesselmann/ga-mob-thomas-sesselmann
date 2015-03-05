@@ -16,25 +16,25 @@ class ViewController: UIViewController {
     }
     
     let buttons = [
-        "C"   : button(name: "C",   colour: UIColor.darkGrayColor()),
-        "+/-" : button(name: "+/-", colour: UIColor.darkGrayColor()),
-        "%"   : button(name: "%",   colour: UIColor.darkGrayColor()),
-        "÷"   : button(name: "÷",   colour: UIColor.orangeColor()),
-        "7"   : button(name: "7",   colour: UIColor.lightGrayColor()),
-        "8"   : button(name: "8",   colour: UIColor.lightGrayColor()),
-        "9"   : button(name: "9",   colour: UIColor.lightGrayColor()),
-        "✕"   : button(name: "✕",   colour: UIColor.orangeColor()),
-        "4"   : button(name: "4",   colour: UIColor.lightGrayColor()),
-        "5"   : button(name: "5",   colour: UIColor.lightGrayColor()),
-        "6"   : button(name: "6",   colour: UIColor.lightGrayColor()),
-        "-"   : button(name: "-",   colour: UIColor.orangeColor()),
-        "1"   : button(name: "1",   colour: UIColor.lightGrayColor()),
-        "2"   : button(name: "2",   colour: UIColor.lightGrayColor()),
-        "3"   : button(name: "3",   colour: UIColor.lightGrayColor()),
-        "+"   : button(name: "+",   colour: UIColor.orangeColor()),
-        "0"   : button(name: "0",   colour: UIColor.lightGrayColor()),
-        "."   : button(name: ".",   colour: UIColor.lightGrayColor()),
-        "="   : button(name: "=",   colour: UIColor.orangeColor())
+        button(name: "C",   colour: UIColor.darkGrayColor()),
+        button(name: "+/-", colour: UIColor.darkGrayColor()),
+        button(name: "%",   colour: UIColor.darkGrayColor()),
+        button(name: "÷",   colour: UIColor.orangeColor()),
+        button(name: "7",   colour: UIColor.lightGrayColor()),
+        button(name: "8",   colour: UIColor.lightGrayColor()),
+        button(name: "9",   colour: UIColor.lightGrayColor()),
+        button(name: "×",   colour: UIColor.orangeColor()),
+        button(name: "4",   colour: UIColor.lightGrayColor()),
+        button(name: "5",   colour: UIColor.lightGrayColor()),
+        button(name: "6",   colour: UIColor.lightGrayColor()),
+        button(name: "−",   colour: UIColor.orangeColor()),
+        button(name: "1",   colour: UIColor.lightGrayColor()),
+        button(name: "2",   colour: UIColor.lightGrayColor()),
+        button(name: "3",   colour: UIColor.lightGrayColor()),
+        button(name: "+",   colour: UIColor.orangeColor()),
+        button(name: "0",   colour: UIColor.lightGrayColor()),
+        button(name: ".",   colour: UIColor.lightGrayColor()),
+        button(name: "=",   colour: UIColor.orangeColor())
         
     ]
     
@@ -43,34 +43,41 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        for data in buttons {
+        
+        let width : CGFloat = 80
+        var x : CGFloat = 0
+        var y : CGFloat = 0
+        
+        for (data) in buttons {
+            
             let button = UIButton()
             button.setTitle(data.name, forState: .Normal)
-            myFirstButton.backgroundColor = data.colour
+            button.titleLabel!.font =  UIFont(name: "HelveticaNeue-Thin", size: 30)
+            button.backgroundColor = data.colour
+            button.layer.borderWidth = 0.4
+            self.view.addSubview(button)
             
+            if data.colour == UIColor.orangeColor() {
+                button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            } else {
+                button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+            }
+            
+            if data.name == "0" {
+                button.frame = CGRectMake(x, y, width * 2, width)
+                x += width
+            } else {
+                button.frame = CGRectMake(x, y, width, width)
+            }
+            
+            x += width
+            if x >= width * 4 {
+                x = 0
+                y += width
+            }
         }
         
-//        let myFirstLabel = UILabel()
-        let myFirstButton = UIButton()
-//        myFirstLabel.text = "I made a label on the screen"
-//        myFirstLabel.font = UIFont(name: "MarkerFelt-Thin", size: 45)
-//        myFirstLabel.textColor = UIColor.redColor()
-//        myFirstLabel.textAlignment = .Center
-//        myFirstLabel.numberOfLines = 5
-//        myFirstLabel.frame = CGRectMake(15, 54, 300, 500)
-        myFirstButton.setTitle("C", forState: .Normal)
-        
-        myFirstButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
-        myFirstButton.backgroundColor = UIColor.grayColor()
-        
-        
-        myFirstButton.frame = CGRectMake(30, 50, 200, 100)
-        
-        
-        
-        myFirstButton.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(myFirstLabel)
-        self.view.addSubview(myFirstButton)
+//        myFirstButton.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
     }
     
     func pressed(sender: UIButton!) {
