@@ -23,9 +23,15 @@ class ViewController: UIViewController {
         myFirstLabel.numberOfLines = 5
         myFirstLabel.frame = CGRectMake(15, 54, 300, 500)
         myFirstButton.setTitle("C", forState: .Normal)
+        
         myFirstButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
-        myFirstButton.frame = CGRectMake(15, -50, 300, 500)
-        myFirstButton.backgroundColor(UIColor.grayColor())
+        myFirstButton.backgroundColor = UIColor.grayColor()
+        
+        
+        myFirstButton.frame = CGRectMake(30, 50, 200, 100)
+        
+        
+        
         myFirstButton.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
         self.view.addSubview(myFirstLabel)
         self.view.addSubview(myFirstButton)
