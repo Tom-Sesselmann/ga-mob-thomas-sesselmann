@@ -9,19 +9,55 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    struct button {
+        let name : String
+        let colour : UIColor
+    }
+    
+    let buttons = [
+        "C"   : button(name: "C",   colour: UIColor.darkGrayColor()),
+        "+/-" : button(name: "+/-", colour: UIColor.darkGrayColor()),
+        "%"   : button(name: "%",   colour: UIColor.darkGrayColor()),
+        "÷"   : button(name: "÷",   colour: UIColor.orangeColor()),
+        "7"   : button(name: "7",   colour: UIColor.lightGrayColor()),
+        "8"   : button(name: "8",   colour: UIColor.lightGrayColor()),
+        "9"   : button(name: "9",   colour: UIColor.lightGrayColor()),
+        "✕"   : button(name: "✕",   colour: UIColor.orangeColor()),
+        "4"   : button(name: "4",   colour: UIColor.lightGrayColor()),
+        "5"   : button(name: "5",   colour: UIColor.lightGrayColor()),
+        "6"   : button(name: "6",   colour: UIColor.lightGrayColor()),
+        "-"   : button(name: "-",   colour: UIColor.orangeColor()),
+        "1"   : button(name: "1",   colour: UIColor.lightGrayColor()),
+        "2"   : button(name: "2",   colour: UIColor.lightGrayColor()),
+        "3"   : button(name: "3",   colour: UIColor.lightGrayColor()),
+        "+"   : button(name: "+",   colour: UIColor.orangeColor()),
+        "0"   : button(name: "0",   colour: UIColor.lightGrayColor()),
+        "."   : button(name: ".",   colour: UIColor.lightGrayColor()),
+        "="   : button(name: "=",   colour: UIColor.orangeColor())
+        
+    ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let myFirstLabel = UILabel()
+        for data in buttons {
+            let button = UIButton()
+            button.setTitle(data.name, forState: .Normal)
+            myFirstButton.backgroundColor = data.colour
+            
+        }
+        
+//        let myFirstLabel = UILabel()
         let myFirstButton = UIButton()
-        myFirstLabel.text = "I made a label on the screen"
-        myFirstLabel.font = UIFont(name: "MarkerFelt-Thin", size: 45)
-        myFirstLabel.textColor = UIColor.redColor()
-        myFirstLabel.textAlignment = .Center
-        myFirstLabel.numberOfLines = 5
-        myFirstLabel.frame = CGRectMake(15, 54, 300, 500)
+//        myFirstLabel.text = "I made a label on the screen"
+//        myFirstLabel.font = UIFont(name: "MarkerFelt-Thin", size: 45)
+//        myFirstLabel.textColor = UIColor.redColor()
+//        myFirstLabel.textAlignment = .Center
+//        myFirstLabel.numberOfLines = 5
+//        myFirstLabel.frame = CGRectMake(15, 54, 300, 500)
         myFirstButton.setTitle("C", forState: .Normal)
         
         myFirstButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
