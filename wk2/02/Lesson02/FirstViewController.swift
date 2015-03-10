@@ -28,6 +28,8 @@ class FirstViewController: UIViewController {
     
     
     @IBAction func secondToDo(sender: AnyObject) {
+        
+        // Check if age is actually an int?
         if let age = ageField.text.toInt() {
             println("Hello \(nameField.text), you are \(age) years old!")
         }

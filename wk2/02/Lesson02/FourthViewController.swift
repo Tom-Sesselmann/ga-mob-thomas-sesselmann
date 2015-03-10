@@ -19,13 +19,16 @@ class FourthViewController: UIViewController {
     
     @IBAction func calculate(sender: AnyObject) {
         
+        // Create an instance of the FibonacciAdder class
         let fibonacciInstance = FibonacciAdder()
         
         if let val : Int = textField.text.toInt() {
             
+            // Numbers greater than 94 will crash the app :(
             if val >= 94 {
                 label.text = "Number is too large :("
                 
+            // Numbers less than 1 will also creash the app :(
             } else if val < 1 {
                 label.text = "Must be a positive integer"
             

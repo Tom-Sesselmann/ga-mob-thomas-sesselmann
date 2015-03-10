@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var label: UILabel!
     
+    // Save the sum as a global variable
     var sum : Int = 0
     
     

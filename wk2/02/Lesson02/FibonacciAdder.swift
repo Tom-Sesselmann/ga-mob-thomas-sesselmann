@@ -13,6 +13,7 @@ class FibonacciAdder {
     
     func fibonacciNumberAtIndex(indexOfFibonacciNumber: Int) -> Int {
         
+        // Initial fibonacci sequence
         var seq : [Int] = [0, 1]
         
         while seq.count < indexOfFibonacciNumber {
