@@ -10,12 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var healthBarWidth: NSLayoutConstraint!
+    @IBOutlet weak var healthBarCnt: HealthBar!
+    @IBOutlet weak var healthBar: UIView!
+    
+    
     let superHero = SuperHero(name: "Superman")
     let superVillain = SuperVillain(name: "Batman")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        healthBarWidth = nil
+        NSLayoutConstraint(item: healthBar, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: healthBarCnt, attribute: NSLayoutAttribute.Width, multiplier: 2, constant: 4)
     }
 
     @IBAction func superHeroAttack(sender: AnyObject) {

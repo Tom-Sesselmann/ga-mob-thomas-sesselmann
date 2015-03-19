@@ -14,6 +14,7 @@
 		E90BD8AF1AB80B5F008626CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90BD8AD1AB80B5F008626CE /* LaunchScreen.xib */; };
 		E90BD8BB1AB80B5F008626CE /* List_of_NamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BD8BA1AB80B5F008626CE /* List_of_NamesTests.swift */; };
 		E90BD8C51AB80ECD008626CE /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BD8C41AB80ECD008626CE /* MyTableViewController.swift */; };
+		E93638891ABAC1A500E00AB9 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93638881ABAC1A500E00AB9 /* AddContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		E90BD8BA1AB80B5F008626CE /* List_of_NamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_of_NamesTests.swift; sourceTree = "<group>"; };
 		E90BD8C41AB80ECD008626CE /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		E90BD8C61AB82331008626CE /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionaries.playground; sourceTree = "<group>"; };
+		E93638881ABAC1A500E00AB9 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		E90BD8961AB80B5F008626CE = {
 			isa = PBXGroup;
 			children = (
+				E93638881ABAC1A500E00AB9 /* AddContactViewController.swift */,
 				E90BD8A11AB80B5F008626CE /* List of Names */,
 				E90BD8B71AB80B5F008626CE /* List of NamesTests */,
 				E90BD8A01AB80B5F008626CE /* Products */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90BD8A71AB80B5F008626CE /* ViewController.swift in Sources */,
+				E93638891ABAC1A500E00AB9 /* AddContactViewController.swift in Sources */,
 				E90BD8C51AB80ECD008626CE /* MyTableViewController.swift in Sources */,
 				E90BD8A51AB80B5F008626CE /* AppDelegate.swift in Sources */,
 			);

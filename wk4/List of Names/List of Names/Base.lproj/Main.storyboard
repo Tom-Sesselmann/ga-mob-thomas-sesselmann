@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBG-lY-Ouy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="List_of_Names" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,10 +45,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ZLl-tT-Phm" kind="show" id="dEX-Pj-9Dz"/>
+                                    <segue destination="ZLl-tT-Phm" kind="show" identifier="showDetailScreen" id="dEX-Pj-9Dz"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subtitleCell" textLabel="faP-j2-qQR" detailTextLabel="QFD-W3-dKI" style="IBUITableViewCellStyleSubtitle" id="VyR-rz-YhF">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subtitleCell" textLabel="faP-j2-qQR" detailTextLabel="ZRY-N5-pw6" style="IBUITableViewCellStyleSubtitle" id="VyR-rz-YhF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VyR-rz-YhF" id="iG8-Gn-XoD">
@@ -59,7 +60,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QFD-W3-dKI">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZRY-N5-pw6">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -74,16 +75,90 @@
                             <outlet property="delegate" destination="eT6-uo-z7x" id="ZVT-Qb-Rre"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cQ5-Hk-CsF"/>
+                    <navigationItem key="navigationItem" id="cQ5-Hk-CsF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cba-4F-4ZJ">
+                            <connections>
+                                <segue destination="ruz-Bl-Akj" kind="presentation" identifier="addContact" id="sZP-aQ-YKf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xha-Co-qEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1967" y="374"/>
         </scene>
+        <!--Add Contact View Controller-->
+        <scene sceneID="Vsf-xr-X3e">
+            <objects>
+                <viewController id="zmF-im-e4q" customClass="AddContactViewController" customModule="List_of_Names" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Mr-KV-wfE"/>
+                        <viewControllerLayoutGuide type="bottom" id="dZU-IT-XdY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I6S-Hw-xPu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5n8-pQ-NUx">
+                                <rect key="frame" x="16" y="152" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aix-zG-GGO">
+                                <rect key="frame" x="16" y="190" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-cM-g79">
+                                <rect key="frame" x="16" y="228" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQU-OW-SBr">
+                                <rect key="frame" x="16" y="266" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ayb-cM-g79" firstAttribute="trailing" secondItem="I6S-Hw-xPu" secondAttribute="trailingMargin" id="0Q9-Pv-tcs"/>
+                            <constraint firstItem="IQU-OW-SBr" firstAttribute="trailing" secondItem="I6S-Hw-xPu" secondAttribute="trailingMargin" id="81s-ai-cBY"/>
+                            <constraint firstItem="5n8-pQ-NUx" firstAttribute="trailing" secondItem="I6S-Hw-xPu" secondAttribute="trailingMargin" id="C33-Pe-osU"/>
+                            <constraint firstItem="5n8-pQ-NUx" firstAttribute="leading" secondItem="I6S-Hw-xPu" secondAttribute="leadingMargin" id="Eh2-lp-u7u"/>
+                            <constraint firstItem="IQU-OW-SBr" firstAttribute="leading" secondItem="I6S-Hw-xPu" secondAttribute="leadingMargin" id="Ijh-Hz-XbO"/>
+                            <constraint firstItem="aix-zG-GGO" firstAttribute="trailing" secondItem="I6S-Hw-xPu" secondAttribute="trailingMargin" id="TPy-8V-hFD"/>
+                            <constraint firstItem="aix-zG-GGO" firstAttribute="leading" secondItem="I6S-Hw-xPu" secondAttribute="leadingMargin" id="XPV-C8-0Jd"/>
+                            <constraint firstItem="Ayb-cM-g79" firstAttribute="top" secondItem="aix-zG-GGO" secondAttribute="bottom" constant="8" id="cMt-ei-2A9"/>
+                            <constraint firstItem="5n8-pQ-NUx" firstAttribute="top" secondItem="1Mr-KV-wfE" secondAttribute="bottom" constant="88" id="jl7-0z-7XT"/>
+                            <constraint firstItem="IQU-OW-SBr" firstAttribute="top" secondItem="Ayb-cM-g79" secondAttribute="bottom" constant="8" id="ly2-wC-r16"/>
+                            <constraint firstItem="aix-zG-GGO" firstAttribute="top" secondItem="5n8-pQ-NUx" secondAttribute="bottom" constant="8" id="ujb-J8-Kd9"/>
+                            <constraint firstItem="Ayb-cM-g79" firstAttribute="leading" secondItem="I6S-Hw-xPu" secondAttribute="leadingMargin" id="yQv-SS-jKf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sid-uI-b7y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LNb-Qj-dH8">
+                            <connections>
+                                <segue destination="6fV-m6-ik7" kind="unwind" unwindAction="unwindFromAddContactScreen:" id="LVP-ea-Vim"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailField" destination="IQU-OW-SBr" id="yNQ-g4-ECZ"/>
+                        <outlet property="firstNameField" destination="5n8-pQ-NUx" id="eQz-La-kpO"/>
+                        <outlet property="lastNameField" destination="aix-zG-GGO" id="Mda-ck-g5I"/>
+                        <outlet property="phoneField" destination="Ayb-cM-g79" id="8WV-NO-ES7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zp3-is-RZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6fV-m6-ik7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2779" y="1092"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ot9-6d-Jxf">
             <objects>
-                <viewController id="ZLl-tT-Phm" sceneMemberID="viewController">
+                <viewController id="ZLl-tT-Phm" customClass="ViewController" customModule="List_of_Names" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Xj-hG-kfY"/>
                         <viewControllerLayoutGuide type="bottom" id="igj-6M-TP1"/>
@@ -105,6 +180,9 @@
                             <constraint firstAttribute="centerX" secondItem="n9n-j0-wt0" secondAttribute="centerX" id="i9B-qX-ons"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="n9n-j0-wt0" id="AWc-GO-ZMT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfM-pm-NXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,6 +205,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="der-6t-DVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1155" y="374"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="10H-AL-2ws">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ruz-Bl-Akj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WW0-yg-FoK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zmF-im-e4q" kind="relationship" relationship="rootViewController" id="Pld-pe-ly4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKi-Eh-Toa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="1092"/>
         </scene>
     </scenes>
 </document>

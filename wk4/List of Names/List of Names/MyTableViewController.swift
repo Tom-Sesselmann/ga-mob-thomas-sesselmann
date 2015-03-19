@@ -8,12 +8,27 @@
 
 import UIKit
 
+struct Contact {
+    let firstName : String
+    let lastName : String
+    let email : String?
+    let phone : Int?
+}
+
 class MyTableViewController: UITableViewController {
     
-    let names = [
-        "A" : ["Andy", "Amy", "Andrew"],
-        "B" : ["Bob", "Billy"],
-        "C" : ["Ciara", "Chris", "Charlie"]
+    var names = [
+        "A" : [
+            Contact(firstName: "Andy", lastName: "Rush", email: nil, phone: nil),
+            Contact(firstName: "Amy", lastName: "Winehouse", email: nil, phone: nil),
+            Contact(firstName: "Andrew", lastName: "Mohl", email: nil, phone: nil)],
+        "B" : [
+            Contact(firstName: "Bob", lastName: "Brown", email: nil, phone: nil),
+            Contact(firstName: "Billy", lastName: "Kalaf", email: nil, phone: nil)],
+        "C" : [
+            Contact(firstName: "Ciara", lastName: "Thomas", email: nil, phone: nil),
+            Contact(firstName: "Chris", lastName: "Campbell", email: nil, phone: nil),
+            Contact(firstName: "Charlie", lastName: "Brown", email: nil, phone: nil)]
     ]
 
     override func viewDidLoad() {
@@ -61,8 +76,8 @@ class MyTableViewController: UITableViewController {
         
         let key = names.keys.array.sorted(<)[indexPath.section]
         
-        let name = names[key]![indexPath.row]
-        cell.textLabel!.text = name
+        let contact = names[key]![indexPath.row]
+        cell.textLabel!.text = "\(contact.firstName) \(contact.lastName)"
 
         return cell
     }
@@ -107,14 +122,43 @@ class MyTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
+    func addNewContact(firstName : String, lastName : String, email : String, phone : Int) {
+        
+        let key = "\(lastName[advance(lastName.startIndex, 0)])".uppercaseString
+        
+        if self.names[key] == nil {
+            self.names[key] = []
+        }
+        
+        self.names[key]!.append(Contact(firstName: firstName, lastName: lastName, email: email, phone: phone))
+        
+        tableView.reloadData()
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showDetailScreen" {
+        
+            let section = tableView.indexPathForSelectedRow()!.section
+            let row = tableView.indexPathForSelectedRow()!.row
+            let key = names.keys.array.sorted(<)[section]
+            
+            (segue.destinationViewController as ViewController).name = names[key]![row].firstName
+        }
     }
-    */
+    
+    
+    @IBAction func unwindFromAddContactScreen(segue: UIStoryboardSegue) {
+        let contact = (segue.sourceViewController as AddContactViewController).renderForm()
+        
+        self.addNewContact(contact["firstName"]!!, lastName: contact["lastName"]!!, email: contact["email"]!!, phone: contact["phone"]!!.toInt()!)
+    }
+
 
 }
