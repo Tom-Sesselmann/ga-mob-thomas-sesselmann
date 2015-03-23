@@ -20,6 +20,8 @@
 		D74B6D1B1AB185A500AFDC66 /* SuperVillain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6D1A1AB185A500AFDC66 /* SuperVillain.swift */; };
 		D74B6D1D1AB185B500AFDC66 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6D1C1AB185B500AFDC66 /* SuperHero.swift */; };
 		D74B6D1F1AB185C400AFDC66 /* NavySailor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6D1E1AB185C400AFDC66 /* NavySailor.swift */; };
+		E94EDD601AC0099C00E7D7AF /* ClassSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94EDD5F1AC0099C00E7D7AF /* ClassSelectionScreen.swift */; };
+		E94EDD621AC036E000E7D7AF /* ClassInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94EDD611AC036E000E7D7AF /* ClassInfoScreen.swift */; };
 		E9F70E731AB830B20007AAB4 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F70E721AB830B20007AAB4 /* StatusBar.swift */; };
 		E9F70E751AB831220007AAB4 /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F70E741AB831220007AAB4 /* HealthBar.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,8 @@
 		D74B6D1A1AB185A500AFDC66 /* SuperVillain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperVillain.swift; sourceTree = "<group>"; };
 		D74B6D1C1AB185B500AFDC66 /* SuperHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
 		D74B6D1E1AB185C400AFDC66 /* NavySailor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavySailor.swift; sourceTree = "<group>"; };
+		E94EDD5F1AC0099C00E7D7AF /* ClassSelectionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectionScreen.swift; sourceTree = "<group>"; };
+		E94EDD611AC036E000E7D7AF /* ClassInfoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassInfoScreen.swift; sourceTree = "<group>"; };
 		E9F70E721AB830B20007AAB4 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		E9F70E741AB831220007AAB4 /* HealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,11 +103,13 @@
 				D74B6CF11AB1853000AFDC66 /* AppDelegate.swift */,
 				D74B6CF31AB1853000AFDC66 /* ViewController.swift */,
 				D74B6CF51AB1853000AFDC66 /* Main.storyboard */,
+				E94EDD5F1AC0099C00E7D7AF /* ClassSelectionScreen.swift */,
 				E9F70E721AB830B20007AAB4 /* StatusBar.swift */,
 				E9F70E741AB831220007AAB4 /* HealthBar.swift */,
 				D74B6CF81AB1853000AFDC66 /* Images.xcassets */,
 				D74B6CFA1AB1853000AFDC66 /* LaunchScreen.xib */,
 				D74B6CEF1AB1853000AFDC66 /* Supporting Files */,
+				E94EDD611AC036E000E7D7AF /* ClassInfoScreen.swift */,
 			);
 			path = GoodVSBad;
 			sourceTree = "<group>";
@@ -203,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D74B6CE71AB1853000AFDC66 /* Build configuration list for PBXProject "GoodVSBad" */;
+			buildConfigurationList = D74B6CE71AB1853000AFDC66 /* Build configuration list for PBXProject "GoodVsBad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -252,6 +258,8 @@
 				D74B6D131AB1854E00AFDC66 /* Player.swift in Sources */,
 				D74B6D151AB1856400AFDC66 /* GoodGuy.swift in Sources */,
 				D74B6D171AB1857A00AFDC66 /* BadGuy.swift in Sources */,
+				E94EDD601AC0099C00E7D7AF /* ClassSelectionScreen.swift in Sources */,
+				E94EDD621AC036E000E7D7AF /* ClassInfoScreen.swift in Sources */,
 				E9F70E731AB830B20007AAB4 /* StatusBar.swift in Sources */,
 				D74B6CF21AB1853000AFDC66 /* AppDelegate.swift in Sources */,
 				E9F70E751AB831220007AAB4 /* HealthBar.swift in Sources */,
@@ -435,7 +443,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D74B6CE71AB1853000AFDC66 /* Build configuration list for PBXProject "GoodVSBad" */ = {
+		D74B6CE71AB1853000AFDC66 /* Build configuration list for PBXProject "GoodVsBad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D74B6D091AB1853000AFDC66 /* Debug */,
