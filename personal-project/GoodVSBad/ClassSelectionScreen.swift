@@ -42,6 +42,7 @@ class ClassSelectionScreen: UITableViewController {
         cell.textLabel!.text = classList[indexPath.row]
         cell.imageView!.image = UIImage(named: classList[indexPath.row])
         
+        
         return cell
     }
     
