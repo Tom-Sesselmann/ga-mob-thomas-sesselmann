@@ -96,6 +96,7 @@
         <!--View Controller-->
         <scene sceneID="NMy-hO-RWS">
             <objects>
+                <viewController id="IoN-PX-la8" sceneMemberID="viewController"/>
                 <containerView opaque="NO" contentMode="scaleToFill" id="rls-iT-qHx">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -111,7 +112,6 @@
                     </connections>
                 </containerView>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOM-HF-8Cp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="IoN-PX-la8" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="-1333" y="1531"/>
         </scene>
