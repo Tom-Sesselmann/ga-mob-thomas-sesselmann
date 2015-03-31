@@ -44,6 +44,7 @@
 		E9C7E8DC1ACA8C4800423068 /* DigitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitButton.swift; sourceTree = "<group>"; };
 		E9C7E8DE1ACA8CC700423068 /* OperationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
 		E9C7E8E01ACA8CCE00423068 /* EqualsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualsButton.swift; sourceTree = "<group>"; };
+		E9C7E8E21ACAA09200423068 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 				E9C7E8DC1ACA8C4800423068 /* DigitButton.swift */,
 				E9C7E8DE1ACA8CC700423068 /* OperationButton.swift */,
 				E9C7E8E01ACA8CCE00423068 /* EqualsButton.swift */,
+				E9C7E8E21ACAA09200423068 /* MyPlayground.playground */,
 				E9C7E8C11ACA84C400423068 /* Images.xcassets */,
 				E9C7E8C31ACA84C400423068 /* LaunchScreen.xib */,
 				E9C7E8B81ACA84C400423068 /* Supporting Files */,
