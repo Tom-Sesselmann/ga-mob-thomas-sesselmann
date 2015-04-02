@@ -21,11 +21,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uj-na-GXt" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="751" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529411764703" green="0.79607843137254897" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Uj-na-GXt" secondAttribute="height" multiplier="1:1" id="3XN-nO-Er8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,11 +36,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzO-kP-bsY" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="601" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fzO-kP-bsY" secondAttribute="height" multiplier="1:1" id="xpM-03-luU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,11 +51,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqr-VI-opc" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="150" y="601" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oqr-VI-opc" secondAttribute="height" multiplier="1:1" id="eV3-9S-SrO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,11 +66,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuI-XZ-iin" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="300" y="601" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FuI-XZ-iin" secondAttribute="height" multiplier="1:1" id="anW-4W-Gsk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,11 +81,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-a9-QnF" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="300" y="451" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ky7-a9-QnF" secondAttribute="height" multiplier="1:1" id="e2u-bd-FYI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,11 +96,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SC-Be-neN" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="150" y="451" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9SC-Be-neN" secondAttribute="height" multiplier="1:1" id="AcP-9A-qMa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,11 +111,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EII-qg-4sH" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="451" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EII-qg-4sH" secondAttribute="height" multiplier="1:1" id="8H7-gZ-G7J"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,14 +126,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-g9-kQo" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="301" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6j0-g9-kQo" secondAttribute="height" multiplier="1:1" id="Bk2-sz-RRq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.86772017045454541" green="0.86772017045454541" blue="0.86772017045454541" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9n-eO-AzL"/>
@@ -141,11 +141,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqX-tl-s8d" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="150" y="301" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AqX-tl-s8d" secondAttribute="height" multiplier="1:1" id="Td8-1j-X4B"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,11 +156,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asG-qa-6t8" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="300" y="301" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="asG-qa-6t8" secondAttribute="height" multiplier="1:1" id="aiX-ab-Yzg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,11 +171,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-B5-hAc" customClass="DigitButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="150" y="751" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9eP-B5-hAc" secondAttribute="height" multiplier="1:1" id="tXd-N7-bFz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -186,11 +186,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-Xe-CJW" customClass="EqualsButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="300" y="751" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.97647058823529409" green="0.48627450980392156" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.19999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Wvi-Xe-CJW" secondAttribute="height" multiplier="1:1" id="Yfx-lM-9Xb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="54"/>
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,11 +201,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rx7-Xy-f1c" customClass="OperationButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="450" y="751" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.48627450979999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.19999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rx7-Xy-f1c" secondAttribute="height" multiplier="1:1" id="Mqj-eB-Zhx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="54"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -216,11 +216,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-Fm-Yyj" customClass="OperationButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="450" y="601" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.48627450979999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.19999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="g0P-Fm-Yyj" secondAttribute="height" multiplier="1:1" id="rrB-5Y-ayL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="54"/>
                                 <state key="normal" title="−">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -231,11 +231,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFn-Pn-NYf" customClass="OperationButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="450" y="451" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.48627450979999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.19999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HFn-Pn-NYf" secondAttribute="height" multiplier="1:1" id="zPn-Ro-0Nw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="54"/>
                                 <state key="normal" title="×">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,11 +246,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-Nq-bvR" customClass="OperationButton" customModule="Toms_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="450" y="301" width="149" height="149"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.48627450979999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.19999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QRD-Nq-bvR" secondAttribute="height" multiplier="1:1" id="Pu3-UO-qnC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="54"/>
                                 <state key="normal" title="÷">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -259,10 +259,10 @@
                                     <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9XW-Rw-v3B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-1j-Bhu">
-                                <rect key="frame" x="16" y="180.5" width="568" height="119.5"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-1j-Bhu">
+                                <rect key="frame" x="16" y="190" width="568" height="110"/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="92"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -273,7 +273,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rx7-Xy-f1c" secondAttribute="bottom" id="1VY-on-yxa"/>
@@ -332,6 +332,9 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="BDj-Vr-foi" appends="YES" id="HPG-zy-AwX"/>
+                            <outletCollection property="gestureRecognizers" destination="wec-FK-jY5" appends="YES" id="Tse-0i-I39"/>
+                            <outletCollection property="gestureRecognizers" destination="Nhc-nK-Ouv" appends="YES" id="Dj0-rU-TCM"/>
+                            <outletCollection property="gestureRecognizers" destination="eH9-hA-fMt" appends="YES" id="4Ya-y7-Q6b"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -341,9 +344,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="BDj-Vr-foi">
+                <swipeGestureRecognizer direction="right" id="BDj-Vr-foi" userLabel="Right Swipe Gesture Recognizer">
                     <connections>
                         <action selector="screenSwiped:" destination="BYZ-38-t0r" id="Tte-ZU-I1N"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="wec-FK-jY5" userLabel="Left Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="screenSwiped:" destination="BYZ-38-t0r" id="wvx-tA-QDp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Nhc-nK-Ouv" userLabel="Up Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="screenSwiped:" destination="BYZ-38-t0r" id="8dh-ZT-iCa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="eH9-hA-fMt" userLabel="Down Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="screenSwiped:" destination="BYZ-38-t0r" id="CrM-rt-Cr2"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             firstNumber += secondNumber
             screenLabel.text = ""
         }
-        screenLabel.text! += "\(sender.titleLabel!.text!)"
+        screenLabel.text! += "\(sender.titleForState(.Normal)!)"
         
     }
     
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             state = "operation"
             secondNumber = (screenLabel.text! as NSString).floatValue
         }
-        lastOperation = sender.titleLabel!.text!
+        lastOperation = sender.titleForState(.Normal)!
     }
     
 
