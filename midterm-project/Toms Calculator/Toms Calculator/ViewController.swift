@@ -31,25 +31,49 @@ class ViewController: UIViewController {
     
 
     @IBAction func digitButtonPressed(sender: DigitButton) {
+        
+        let digitText = sender.titleForState(.Normal)!
+        
+        // Start new number state
         if state == "operation" {
             state = "number"
-            firstNumber += secondNumber
             screenLabel.text = ""
         }
-        screenLabel.text! += "\(sender.titleForState(.Normal)!)"
+        
+        // Decimal point special cases
+        if digitText == "." {
+            
+            // Enter leading zero for decimal point numbers
+            if screenLabel.text == "" {
+                screenLabel.text! += "0"
+            }
+            
+            // Only have 1 decimal point in string
+            else if (find(screenLabel.text!, ".") != nil) {
+                return
+            }
+        }
+        screenLabel.text! += "\(digitText)"
         
     }
     
     
     @IBAction func operationButtonPressed(sender: OperationButton) {
+        
+        let operationText = sender.titleForState(.Normal)!
+        
+        // Start new operation state and run the calculation for the previous operation
         if state == "number" {
             state = "operation"
             secondNumber = (screenLabel.text! as NSString).floatValue
+            calculate()
         }
-        lastOperation = sender.titleForState(.Normal)!
+        
+        lastOperation = operationText
     }
     
-
+    
+    // Combine this into operationButtonPressed function?
     @IBAction func equalsButtonPressed(sender: EqualsButton) {
         if state == "number" {
             state = "operation"
@@ -62,40 +86,55 @@ class ViewController: UIViewController {
     
     
     @IBAction func screenSwiped(sender: AnyObject) {
+        clear()
+    }
+    
+    
+    func calculate() {
+        
+        switch lastOperation {
+            
+        case "+":
+            firstNumber += secondNumber
+            
+        case "−":
+            firstNumber -= secondNumber
+            
+        case "×":
+            firstNumber *= secondNumber
+            
+        case "÷":
+            
+            // Can't divide by zero!
+            if secondNumber == 0 {
+                clear()
+                screenLabel.text = "Error"
+                return
+            }
+            
+            firstNumber /= secondNumber
+            
+        default:
+            println("why do I need a default")
+        }
+        
+        // Remove decimal point if number is an int and set screenLabel to the answer
+        if floor(firstNumber) == firstNumber {
+            screenLabel.text = "\(Int(firstNumber))"
+        }
+        
+        else {
+            screenLabel.text = "\(firstNumber)"
+        }
+        
+    }
+    
+    func clear() {
         screenLabel.text = "0"
         firstNumber = 0.0
         secondNumber = 0.0
         lastOperation = "+"
         state = "operation"
-    }
-    
-    func calculate() {
-        println("\(firstNumber), \(secondNumber)")
-        switch lastOperation {
-        case "+":
-            firstNumber += secondNumber
-        case "−":
-            firstNumber -= secondNumber
-        case "×":
-            firstNumber *= secondNumber
-        case "÷":
-            if secondNumber == 0 {
-                screenLabel.text = "Error"
-                return
-            }
-            firstNumber /= secondNumber
-        default:
-            println("error")
-        }
-        secondNumber = 0.0
-        
-        // Remove decimal point if number is an int
-        if floor(firstNumber) == firstNumber {
-            screenLabel.text = "\(Int(firstNumber))"
-        } else {
-            screenLabel.text = "\(firstNumber)"
-        }
-        
     }
 }
 
