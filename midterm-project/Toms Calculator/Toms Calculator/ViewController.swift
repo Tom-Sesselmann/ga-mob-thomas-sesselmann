@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum Operation : String {
+    case addition       = "+"
+    case subtraction    = "−"
+    case multiplication = "×"
+    case division       = "÷"
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var screenLabel: UILabel!
@@ -94,16 +101,16 @@ class ViewController: UIViewController {
         
         switch lastOperation {
             
-        case "+":
+        case Operation.addition.rawValue:
             firstNumber += secondNumber
             
-        case "−":
+        case Operation.subtraction.rawValue:
             firstNumber -= secondNumber
             
-        case "×":
+        case Operation.multiplication.rawValue:
             firstNumber *= secondNumber
             
-        case "÷":
+        case Operation.division.rawValue:
             
             // Can't divide by zero!
             if secondNumber == 0 {
