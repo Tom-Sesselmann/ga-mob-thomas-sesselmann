@@ -132,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZN7-I9-GgF">
-                                <rect key="frame" x="237" y="279.5" width="126" height="41"/>
+                                <rect key="frame" x="237" y="280" width="126" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Add Record">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,14 +141,32 @@
                                     <action selector="addButtonTapped:" destination="BK3-ec-FS0" eventType="touchUpInside" id="dww-C0-j3O"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0T2-0v-quL">
+                                <rect key="frame" x="255" y="183" width="92" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6O-Mz-z7D">
+                                <rect key="frame" x="256" y="221" width="91" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="l6O-Mz-z7D" secondAttribute="centerX" constant="-0.5" id="B4T-Cu-ymb"/>
+                            <constraint firstAttribute="centerY" secondItem="l6O-Mz-z7D" secondAttribute="centerY" constant="64" id="Shg-XJ-DuX"/>
                             <constraint firstAttribute="centerX" secondItem="ZN7-I9-GgF" secondAttribute="centerX" id="a6x-DN-SkW"/>
+                            <constraint firstAttribute="centerY" secondItem="0T2-0v-quL" secondAttribute="centerY" constant="102" id="eLJ-aI-hTk"/>
                             <constraint firstAttribute="centerY" secondItem="ZN7-I9-GgF" secondAttribute="centerY" id="hJA-ba-jXZ"/>
+                            <constraint firstAttribute="centerX" secondItem="0T2-0v-quL" secondAttribute="centerX" constant="-0.5" id="xXy-NW-UT7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Screen" id="S86-Co-PYm"/>
+                    <connections>
+                        <outlet property="firstNameField" destination="0T2-0v-quL" id="DpB-TQ-S44"/>
+                        <outlet property="lastNameField" destination="l6O-Mz-z7D" id="KvM-IG-TIL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBS-Qj-0EZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

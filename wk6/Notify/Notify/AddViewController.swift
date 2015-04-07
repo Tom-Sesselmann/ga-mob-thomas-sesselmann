@@ -12,6 +12,10 @@ let TOMUserAddedRecord = "UserAddedRecord"
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,8 +28,13 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped(sender: UIButton) {
+        
+        let data : [String : String] = ["firstName" : firstNameField.text, "lastName" : lastNameField.text]
+        
         let notificationCentre = NSNotificationCenter.defaultCenter()
-        notificationCentre.postNotificationName(TOMUserAddedRecord, object: nil)
+        notificationCentre.postNotificationName(TOMUserAddedRecord, object: self, userInfo: data)
+        
+        navigationController?.popViewControllerAnimated(true)
     }
 
     /*
