@@ -17,12 +17,6 @@ class NewTripTableViewController: UITableViewController {
         ["Sydney Light Rail" , "By Stop"]
     ]
     
-    // MARK: - Table view delegate
-    
-//    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//        println("Section: \(indexPath.section); Row:\(indexPath.row);")
-//    }
-    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

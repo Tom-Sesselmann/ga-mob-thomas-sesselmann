@@ -7,18 +7,37 @@
 //
 
 import UIKit
+import CoreData
 
 class ToStationTableViewController: UITableViewController {
+    
+    var appDelegate: AppDelegate?
     
     var fromStation : String?
     var toStation : String?
     let orderedListOfTrainStationsByFirstLetter = getListOfTrainStations()
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+    }
     
     // MARK: - Table view delegate
     
-//    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//        toStation = orderedListOfTrainStationsByFirstLetter[indexPath.section][indexPath.row]
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        toStation = orderedListOfTrainStationsByFirstLetter[indexPath.section][indexPath.row]
+        
+        let trip = NSEntityDescription.insertNewObjectForEntityForName("Trip", inManagedObjectContext: appDelegate!.managedObjectContext!) as! Trip
+        trip.fromLocation = fromStation!
+        trip.toLocation = toStation!
+        trip.subtitle = ""
+        
+        appDelegate?.saveContext()
+        
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     // MARK: - Table view data source
     
@@ -52,10 +71,10 @@ class ToStationTableViewController: UITableViewController {
         return "\(firstStationInSection[firstStationInSection.startIndex])"
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let section = tableView.indexPathForSelectedRow()!.section
-        let row = tableView.indexPathForSelectedRow()!.row
-        
-        toStation = orderedListOfTrainStationsByFirstLetter[section][row]
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let section = tableView.indexPathForSelectedRow()!.section
+//        let row = tableView.indexPathForSelectedRow()!.row
+//        
+//        toStation = orderedListOfTrainStationsByFirstLetter[section][row]
+//    }
 }

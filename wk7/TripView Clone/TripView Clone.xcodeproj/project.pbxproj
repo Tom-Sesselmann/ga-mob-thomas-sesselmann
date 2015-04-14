@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E975B76C1ADD033E00BA2EFB /* ToStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975B76B1ADD033E00BA2EFB /* ToStationTableViewController.swift */; };
+		E975B7A61ADD11F100BA2EFB /* TripsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E975B7A41ADD11F100BA2EFB /* TripsModel.xcdatamodeld */; };
+		E975B7A81ADD140000BA2EFB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975B7A71ADD140000BA2EFB /* Trip.swift */; };
 		E98ADCAB1AD8CC18001A31CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ADCAA1AD8CC18001A31CC /* AppDelegate.swift */; };
-		E98ADCAD1AD8CC18001A31CC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ADCAC1AD8CC18001A31CC /* FirstViewController.swift */; };
-		E98ADCAF1AD8CC18001A31CC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ADCAE1AD8CC18001A31CC /* SecondViewController.swift */; };
 		E98ADCB21AD8CC18001A31CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98ADCB01AD8CC18001A31CC /* Main.storyboard */; };
 		E98ADCB41AD8CC18001A31CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98ADCB31AD8CC18001A31CC /* Images.xcassets */; };
 		E98ADCB71AD8CC18001A31CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98ADCB51AD8CC18001A31CC /* LaunchScreen.xib */; };
@@ -34,11 +34,11 @@
 
 /* Begin PBXFileReference section */
 		E975B76B1ADD033E00BA2EFB /* ToStationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToStationTableViewController.swift; sourceTree = "<group>"; };
+		E975B7A51ADD11F100BA2EFB /* TripsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripsModel.xcdatamodel; sourceTree = "<group>"; };
+		E975B7A71ADD140000BA2EFB /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		E98ADCA51AD8CC18001A31CC /* TripView Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TripView Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98ADCA91AD8CC18001A31CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98ADCAA1AD8CC18001A31CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E98ADCAC1AD8CC18001A31CC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E98ADCAE1AD8CC18001A31CC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E98ADCB11AD8CC18001A31CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E98ADCB31AD8CC18001A31CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E98ADCB61AD8CC18001A31CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -92,19 +92,19 @@
 		E98ADCA71AD8CC18001A31CC /* TripView Clone */ = {
 			isa = PBXGroup;
 			children = (
+				E98ADCD61AD8FBC7001A31CC /* MyPlayground.playground */,
+				E975B7A71ADD140000BA2EFB /* Trip.swift */,
 				E98ADCAA1AD8CC18001A31CC /* AppDelegate.swift */,
-				E98ADCAC1AD8CC18001A31CC /* FirstViewController.swift */,
-				E98ADCAE1AD8CC18001A31CC /* SecondViewController.swift */,
-				E98ADCB01AD8CC18001A31CC /* Main.storyboard */,
+				E98ADCD41AD8F5F0001A31CC /* ListOfTrainStations.swift */,
+				E98ADCD01AD8F0AD001A31CC /* ToolsTableViewController.swift */,
+				E98ADCCC1AD8E515001A31CC /* TripsTableViewController.swift */,
+				E98ADCCE1AD8E7F8001A31CC /* NewTripTableViewController.swift */,
 				E98ADCD21AD8F229001A31CC /* FromStationTableViewController.swift */,
 				E975B76B1ADD033E00BA2EFB /* ToStationTableViewController.swift */,
-				E98ADCD41AD8F5F0001A31CC /* ListOfTrainStations.swift */,
-				E98ADCD61AD8FBC7001A31CC /* MyPlayground.playground */,
-				E98ADCD01AD8F0AD001A31CC /* ToolsTableViewController.swift */,
-				E98ADCCE1AD8E7F8001A31CC /* NewTripTableViewController.swift */,
-				E98ADCCC1AD8E515001A31CC /* TripsTableViewController.swift */,
 				E98ADCB31AD8CC18001A31CC /* Images.xcassets */,
+				E98ADCB01AD8CC18001A31CC /* Main.storyboard */,
 				E98ADCB51AD8CC18001A31CC /* LaunchScreen.xib */,
+				E975B7A41ADD11F100BA2EFB /* TripsModel.xcdatamodeld */,
 				E98ADCA81AD8CC18001A31CC /* Supporting Files */,
 			);
 			path = "TripView Clone";
@@ -235,15 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E975B7A81ADD140000BA2EFB /* Trip.swift in Sources */,
 				E98ADCD51AD8F5F0001A31CC /* ListOfTrainStations.swift in Sources */,
-				E98ADCAF1AD8CC18001A31CC /* SecondViewController.swift in Sources */,
 				E98ADCD31AD8F229001A31CC /* FromStationTableViewController.swift in Sources */,
 				E975B76C1ADD033E00BA2EFB /* ToStationTableViewController.swift in Sources */,
 				E98ADCD11AD8F0AD001A31CC /* ToolsTableViewController.swift in Sources */,
 				E98ADCAB1AD8CC18001A31CC /* AppDelegate.swift in Sources */,
+				E975B7A61ADD11F100BA2EFB /* TripsModel.xcdatamodeld in Sources */,
 				E98ADCCD1AD8E515001A31CC /* TripsTableViewController.swift in Sources */,
 				E98ADCCF1AD8E7F8001A31CC /* NewTripTableViewController.swift in Sources */,
-				E98ADCAD1AD8CC18001A31CC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +453,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E975B7A41ADD11F100BA2EFB /* TripsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E975B7A51ADD11F100BA2EFB /* TripsModel.xcdatamodel */,
+			);
+			currentVersion = E975B7A51ADD11F100BA2EFB /* TripsModel.xcdatamodel */;
+			path = TripsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E98ADC9D1AD8CC18001A31CC /* Project object */;
 }

@@ -7,37 +7,50 @@
 //
 
 import UIKit
+import CoreData
 
 class TripsTableViewController: UITableViewController {
     
-    struct Trip {
+    var appDelegate: AppDelegate?
+    
+    struct PlaceholderTrip {
         let fromLocation : String
         let toLocation : String
         let subtitle : String
     }
     
-    var tripData : [Trip] = [
-        Trip(fromLocation: "Lewisham", toLocation: "Artarmon", subtitle: "Via Central"),
-        Trip(fromLocation: "Central", toLocation: "Lewisham", subtitle: "Automatic Routing"),
-        Trip(fromLocation: "Central", toLocation: "Artarmon", subtitle: "Automatic Routing"),
-        Trip(fromLocation: "Lane Cove", toLocation: "City", subtitle: "Routes 251, 252, 253, 254, 261, 285, 286, 288, 290"),
-        Trip(fromLocation: "City", toLocation: "Lane Cove", subtitle: "Routes 251, 252, 253, 254, 261, 285, 286, 288, 290"),
-        Trip(fromLocation: "Chatswood", toLocation: "Artarmon", subtitle: "143, 144, 200"),
+    var initialTripData : [PlaceholderTrip] = [
+        PlaceholderTrip(fromLocation: "Lewisham", toLocation: "Artarmon", subtitle: "Via Central"),
+        PlaceholderTrip(fromLocation: "Central", toLocation: "Lewisham", subtitle: "Automatic Routing"),
+        PlaceholderTrip(fromLocation: "Central", toLocation: "Artarmon", subtitle: "Automatic Routing"),
+        PlaceholderTrip(fromLocation: "Lane Cove", toLocation: "City", subtitle: "Routes 251, 252, 253, 254, 261, 285, 286, 288, 290"),
+        PlaceholderTrip(fromLocation: "City", toLocation: "Lane Cove", subtitle: "Routes 251, 252, 253, 254, 261, 285, 286, 288, 290"),
+        PlaceholderTrip(fromLocation: "Chatswood", toLocation: "Artarmon", subtitle: "143, 144, 200"),
     ]
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        self.tableView.reloadData()
+        
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
+    }
     
     
     // MARK: - Table view data source
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // Return the number of sections.
-        
-        return 1
-    }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
         
-        return tripData.count
+        if let trips = fetchTrips() {
+            return trips.count + initialTripData.count
+        }
+        else { return initialTripData.count }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -46,21 +59,42 @@ class TripsTableViewController: UITableViewController {
         // Configure the cell...
         
         
-        let trip = tripData[indexPath.row]
-        cell.textLabel!.text = "\(trip.fromLocation) to \(trip.toLocation)"
-        cell.detailTextLabel?.text = "\(trip.subtitle)"
+        if indexPath.row < initialTripData.count {
+            let trip = initialTripData[indexPath.row]
+            cell.textLabel!.text = "\(trip.fromLocation) to \(trip.toLocation)"
+            cell.detailTextLabel?.text = "\(trip.subtitle)"
+        }
+        else {
+            if let trips = fetchTrips() {
+                let trip = trips[indexPath.row - initialTripData.count]
+                cell.textLabel!.text = "\(trip.fromLocation) to \(trip.toLocation)"
+                cell.detailTextLabel?.text = "\(trip.subtitle)"
+            }
+        }
         
         return cell
     }
     
     
-    @IBAction func unwindFromToStationScreen(segue: UIStoryboardSegue) {
-        let fromStation = (segue.sourceViewController as! ToStationTableViewController).fromStation!
-        let toStation = (segue.sourceViewController as! ToStationTableViewController).toStation!
+    func fetchTrips() -> [Trip]? {
+        let tripsFetchRequest = NSFetchRequest(entityName: "Trip")
+        let sortDescriptor = NSSortDescriptor(key: "createdAt", ascending: false)
+        tripsFetchRequest.sortDescriptors = [sortDescriptor]
         
-        tripData += [Trip(fromLocation: fromStation, toLocation: toStation, subtitle: "")]
-        
-        tableView.reloadData()
+        if let trips = appDelegate!.managedObjectContext!.executeFetchRequest(tripsFetchRequest, error: nil) as? [Trip] {
+            return trips
+        }
+        else { return nil }
     }
+    
+    
+//    @IBAction func unwindFromToStationScreen(segue: UIStoryboardSegue) {
+//        let fromStation = (segue.sourceViewController as! ToStationTableViewController).fromStation!
+//        let toStation = (segue.sourceViewController as! ToStationTableViewController).toStation!
+//        
+//        initialTripData += [PlaceholderTrip(fromLocation: fromStation, toLocation: toStation, subtitle: "")]
+//        
+//        tableView.reloadData()
+//    }
 
 }
