@@ -16,7 +16,7 @@ class TripsTableViewController: UITableViewController {
         let subtitle : String
     }
     
-    let intialData : [Trip] = [
+    var tripData : [Trip] = [
         Trip(fromLocation: "Lewisham", toLocation: "Artarmon", subtitle: "Via Central"),
         Trip(fromLocation: "Central", toLocation: "Lewisham", subtitle: "Automatic Routing"),
         Trip(fromLocation: "Central", toLocation: "Artarmon", subtitle: "Automatic Routing"),
@@ -25,12 +25,6 @@ class TripsTableViewController: UITableViewController {
         Trip(fromLocation: "Chatswood", toLocation: "Artarmon", subtitle: "143, 144, 200"),
     ]
     
-    
-    // MARK: - Table view delegate
-    
-//    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//        println("Section: \(indexPath.section); Row:\(indexPath.row);")
-//    }
     
     // MARK: - Table view data source
     
@@ -43,7 +37,7 @@ class TripsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
         
-        return intialData.count
+        return tripData.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -52,11 +46,21 @@ class TripsTableViewController: UITableViewController {
         // Configure the cell...
         
         
-        let trip = intialData[indexPath.row]
+        let trip = tripData[indexPath.row]
         cell.textLabel!.text = "\(trip.fromLocation) to \(trip.toLocation)"
         cell.detailTextLabel?.text = "\(trip.subtitle)"
         
         return cell
+    }
+    
+    
+    @IBAction func unwindFromToStationScreen(segue: UIStoryboardSegue) {
+        let fromStation = (segue.sourceViewController as! ToStationTableViewController).fromStation!
+        let toStation = (segue.sourceViewController as! ToStationTableViewController).toStation!
+        
+        tripData += [Trip(fromLocation: fromStation, toLocation: toStation, subtitle: "")]
+        
+        tableView.reloadData()
     }
 
 }

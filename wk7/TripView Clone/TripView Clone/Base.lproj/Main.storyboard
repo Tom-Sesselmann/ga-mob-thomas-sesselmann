@@ -93,13 +93,13 @@
         <!--From Station-->
         <scene sceneID="xU4-sR-18n">
             <objects>
-                <tableViewController id="orO-Rn-WBn" sceneMemberID="viewController">
+                <tableViewController id="orO-Rn-WBn" customClass="FromStationTableViewController" customModule="TripView_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5nD-XD-0xD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="8L5-kA-AzQ" style="IBUITableViewCellStyleDefault" id="rIf-GO-78w">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fromStationCell" textLabel="8L5-kA-AzQ" style="IBUITableViewCellStyleDefault" id="rIf-GO-78w">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rIf-GO-78w" id="LHw-gN-CGs">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -131,17 +131,28 @@
         <!--To Station-->
         <scene sceneID="THd-Kg-6wh">
             <objects>
-                <tableViewController id="5ef-qO-itj" sceneMemberID="viewController">
+                <tableViewController id="5ef-qO-itj" customClass="ToStationTableViewController" customModule="TripView_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bGj-Vf-sGS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="juI-gY-BEc">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="toStationCell" textLabel="HkR-8a-MBa" style="IBUITableViewCellStyleDefault" id="juI-gY-BEc">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="juI-gY-BEc" id="tBb-SH-Jz8">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HkR-8a-MBa">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="u1v-rh-uiL" kind="unwind" unwindAction="unwindFromToStationScreen:" id="zf4-yq-D1c"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -152,6 +163,7 @@
                     <navigationItem key="navigationItem" title="To Station" id="xnj-Ks-u7W"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mue-TD-sHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="u1v-rh-uiL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3608" y="-329"/>
         </scene>
@@ -295,7 +307,6 @@ Data provided by Transport for NSW. Best efforts are taken to ensure the accurac
         <!--About-->
         <scene sceneID="wiY-hn-zCj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tqi-Ob-EOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="53x-J7-o3r" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="About" id="eTN-4R-yil"/>
                     <toolbarItems/>
@@ -308,6 +319,7 @@ Data provided by Transport for NSW. Best efforts are taken to ensure the accurac
                         <segue destination="alC-Vn-Khc" kind="relationship" relationship="rootViewController" id="HWS-6y-0cE"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqi-Ob-EOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="739" y="1070"/>
         </scene>

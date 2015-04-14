@@ -70,7 +70,7 @@ class MyTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("titleCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("titleCell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
         
@@ -149,13 +149,13 @@ class MyTableViewController: UITableViewController {
             let row = tableView.indexPathForSelectedRow()!.row
             let key = names.keys.array.sorted(<)[section]
             
-            (segue.destinationViewController as ViewController).name = names[key]![row].firstName
+            (segue.destinationViewController as! ViewController).name = names[key]![row].firstName
         }
     }
     
     
     @IBAction func unwindFromAddContactScreen(segue: UIStoryboardSegue) {
-        let contact = (segue.sourceViewController as AddContactViewController).renderForm()
+        let contact = (segue.sourceViewController as! AddContactViewController).renderForm()
         
         self.addNewContact(contact["firstName"]!!, lastName: contact["lastName"]!!, email: contact["email"]!!, phone: contact["phone"]!!.toInt()!)
     }

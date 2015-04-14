@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E975B76C1ADD033E00BA2EFB /* ToStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975B76B1ADD033E00BA2EFB /* ToStationTableViewController.swift */; };
 		E98ADCAB1AD8CC18001A31CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ADCAA1AD8CC18001A31CC /* AppDelegate.swift */; };
 		E98ADCAD1AD8CC18001A31CC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ADCAC1AD8CC18001A31CC /* FirstViewController.swift */; };
 		E98ADCAF1AD8CC18001A31CC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ADCAE1AD8CC18001A31CC /* SecondViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E975B76B1ADD033E00BA2EFB /* ToStationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToStationTableViewController.swift; sourceTree = "<group>"; };
 		E98ADCA51AD8CC18001A31CC /* TripView Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TripView Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98ADCA91AD8CC18001A31CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98ADCAA1AD8CC18001A31CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				E98ADCAE1AD8CC18001A31CC /* SecondViewController.swift */,
 				E98ADCB01AD8CC18001A31CC /* Main.storyboard */,
 				E98ADCD21AD8F229001A31CC /* FromStationTableViewController.swift */,
+				E975B76B1ADD033E00BA2EFB /* ToStationTableViewController.swift */,
 				E98ADCD41AD8F5F0001A31CC /* ListOfTrainStations.swift */,
 				E98ADCD61AD8FBC7001A31CC /* MyPlayground.playground */,
 				E98ADCD01AD8F0AD001A31CC /* ToolsTableViewController.swift */,
@@ -235,6 +238,7 @@
 				E98ADCD51AD8F5F0001A31CC /* ListOfTrainStations.swift in Sources */,
 				E98ADCAF1AD8CC18001A31CC /* SecondViewController.swift in Sources */,
 				E98ADCD31AD8F229001A31CC /* FromStationTableViewController.swift in Sources */,
+				E975B76C1ADD033E00BA2EFB /* ToStationTableViewController.swift in Sources */,
 				E98ADCD11AD8F0AD001A31CC /* ToolsTableViewController.swift in Sources */,
 				E98ADCAB1AD8CC18001A31CC /* AppDelegate.swift in Sources */,
 				E98ADCCD1AD8E515001A31CC /* TripsTableViewController.swift in Sources */,
@@ -437,6 +441,7 @@
 				E98ADCC81AD8CC18001A31CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E98ADCC91AD8CC18001A31CC /* Build configuration list for PBXNativeTarget "TripView CloneTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +450,7 @@
 				E98ADCCB1AD8CC18001A31CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

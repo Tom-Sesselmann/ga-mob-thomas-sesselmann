@@ -1,22 +1,23 @@
 //
-//  FromStationTableViewController.swift
+//  ToStationTableViewController.swift
 //  TripView Clone
 //
-//  Created by Thomas Sesselmann on 11/04/2015.
+//  Created by Thomas Sesselmann on 14/04/2015.
 //  Copyright (c) 2015 Thomas Sesselmann. All rights reserved.
 //
 
 import UIKit
 
-class FromStationTableViewController: UITableViewController {
+class ToStationTableViewController: UITableViewController {
     
+    var fromStation : String?
+    var toStation : String?
     let orderedListOfTrainStationsByFirstLetter = getListOfTrainStations()
-    
     
     // MARK: - Table view delegate
     
 //    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//        println("Section: \(indexPath.section); Row:\(indexPath.row);")
+//        toStation = orderedListOfTrainStationsByFirstLetter[indexPath.section][indexPath.row]
 //    }
     
     // MARK: - Table view data source
@@ -36,7 +37,7 @@ class FromStationTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("fromStationCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("toStationCell", forIndexPath: indexPath) as! UITableViewCell
         
         // Configure the cell...
         
@@ -51,17 +52,10 @@ class FromStationTableViewController: UITableViewController {
         return "\(firstStationInSection[firstStationInSection.startIndex])"
     }
     
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-        
         let section = tableView.indexPathForSelectedRow()!.section
         let row = tableView.indexPathForSelectedRow()!.row
         
-        (segue.destinationViewController as! ToStationTableViewController).fromStation = orderedListOfTrainStationsByFirstLetter[section][row]
-        
+        toStation = orderedListOfTrainStationsByFirstLetter[section][row]
     }
 }
