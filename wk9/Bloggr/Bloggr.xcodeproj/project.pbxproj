@@ -31,6 +31,7 @@
 		E9BA35371AE8E76B0030D31E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA35361AE8E76A0030D31E /* SystemConfiguration.framework */; };
 		E9BA35391AE8E7730030D31E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA35381AE8E7730030D31E /* libz.dylib */; };
 		E9BA353B1AE8E77A0030D31E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA353A1AE8E77A0030D31E /* libsqlite3.dylib */; };
+		E9C8C6E71AE8F32A00EBFD62 /* BlogPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C8C6E61AE8F32A00EBFD62 /* BlogPostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		E9BA35361AE8E76A0030D31E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E9BA35381AE8E7730030D31E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		E9BA353A1AE8E77A0030D31E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E9C8C6E61AE8F32A00EBFD62 /* BlogPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogPostTableViewController.swift; path = ../BlogPostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		E9BA34F31AE8E5020030D31E /* Bloggr */ = {
 			isa = PBXGroup;
 			children = (
+				E9C8C6E61AE8F32A00EBFD62 /* BlogPostTableViewController.swift */,
 				E9BA35191AE8E6A50030D31E /* parse-library-1.7.1 */,
 				E9BA34F61AE8E5020030D31E /* AppDelegate.swift */,
 				E9BA34FB1AE8E5020030D31E /* ViewController.swift */,
@@ -294,6 +297,7 @@
 				E9BA34FC1AE8E5020030D31E /* ViewController.swift in Sources */,
 				E9BA34FA1AE8E5020030D31E /* Bloggr.xcdatamodeld in Sources */,
 				E9BA34F71AE8E5020030D31E /* AppDelegate.swift in Sources */,
+				E9C8C6E71AE8F32A00EBFD62 /* BlogPostTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +503,7 @@
 				E9BA35151AE8E5020030D31E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9BA35161AE8E5020030D31E /* Build configuration list for PBXNativeTarget "BloggrTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +512,7 @@
 				E9BA35181AE8E5020030D31E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
