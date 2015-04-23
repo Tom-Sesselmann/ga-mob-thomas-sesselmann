@@ -47,13 +47,13 @@ class ClassInfoScreen: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("classStatsCell", forIndexPath: indexPath) as UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("classStatsCell", forIndexPath: indexPath) as! UITableViewCell
             cell.textLabel!.text = stats[indexPath.row]
             cell.detailTextLabel?.text = "\(statValues[indexPath.row])"
             return cell
             
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("classDescriptionCell", forIndexPath: indexPath) as UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("classDescriptionCell", forIndexPath: indexPath) as! UITableViewCell
             cell.textLabel!.text = "Description"
             cell.detailTextLabel?.text = "This is a really cool class"
             return cell

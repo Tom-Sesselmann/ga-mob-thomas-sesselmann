@@ -21,8 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        healthBarWidth = nil
-        NSLayoutConstraint(item: healthBar, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: healthBarCnt, attribute: NSLayoutAttribute.Width, multiplier: 2, constant: 4)
+//        let bounds = self.healthBar.bounds
+        UIView.animateWithDuration(2.0, delay: 0.5, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.healthBarWidth.constant += 50
+            }, completion: nil)
     }
 
     @IBAction func superHeroAttack(sender: AnyObject) {

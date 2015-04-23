@@ -34,7 +34,7 @@ class ClassSelectionScreen: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("classNameCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("classNameCell", forIndexPath: indexPath) as! UITableViewCell
         
         // Configure the cell...
         
@@ -57,7 +57,7 @@ class ClassSelectionScreen: UITableViewController {
         
         if segue.identifier == "showClassInfoScreen" {
             
-            (segue.destinationViewController as ClassInfoScreen).className = classList[tableView.indexPathForSelectedRow()!.row]
+            (segue.destinationViewController as! ClassInfoScreen).className = classList[tableView.indexPathForSelectedRow()!.row]
         }
     }
     
