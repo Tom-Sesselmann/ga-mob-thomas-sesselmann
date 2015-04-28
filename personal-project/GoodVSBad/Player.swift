@@ -17,12 +17,13 @@ class Player {
     }
     
     // (Player) -> ()
-    func attackOpponent(player: Player) {
+    func attackOpponent(player: Player) -> Int {
         let damage = Int(arc4random_uniform(20))
         player.health -= damage
         
         checkIfPlayer(player, blockedDamage: damage)
         checkIfPlayerDied(player)
+        return damage
     }
     
     private

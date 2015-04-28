@@ -167,7 +167,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MR-1P-bpW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
-                                <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86772017050000005" green="0.035852336259999999" blue="0.025733251790000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="fqM-vl-vBf" appends="YES" id="Zk6-L2-yUy"/>
@@ -231,7 +231,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="gja-P9-Izl" firstAttribute="top" secondItem="BJN-jh-lvj" secondAttribute="bottom" constant="8" id="18C-qm-neN"/>
@@ -270,12 +270,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="down" id="fqM-vl-vBf">
                     <connections>
-                        <action selector="superHeroAttack:" destination="BYZ-38-t0r" id="i4h-b8-2Kq"/>
+                        <action selector="superVillainAttack:" destination="BYZ-38-t0r" id="Reu-hE-yS7"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="Y6Q-MN-Zkl">
                     <connections>
-                        <action selector="superVillainAttack:" destination="BYZ-38-t0r" id="4Bb-nD-NZ0"/>
+                        <action selector="superHeroAttack:" destination="BYZ-38-t0r" id="JgB-76-hYr"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

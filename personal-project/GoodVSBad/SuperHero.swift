@@ -9,8 +9,8 @@
 import Foundation
 
 class SuperHero : GoodGuy {
-    override func attack(player: BadGuy) {
+    override func attack(player: BadGuy) -> Int {
         println("Horay!")
-        super.attack(player)
+        return super.attack(player)
     }
 }

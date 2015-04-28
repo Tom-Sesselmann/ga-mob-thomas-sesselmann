@@ -21,15 +21,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let bounds = self.healthBar.bounds
-        UIView.animateWithDuration(2.0, delay: 0.5, options: UIViewAnimationOptions.CurveLinear, animations: {
-            self.healthBarWidth.constant += 50
-            }, completion: nil)
     }
 
     @IBAction func superHeroAttack(sender: AnyObject) {
+        
         println("Super Hero Attacks")
-        superHero.attack(superVillain)
+        let damageValue = superHero.attack(superVillain)
+        
+        
+        var damageLabel = UILabel(frame: CGRectMake(0, 0, 20, 20))
+        damageLabel.center = CGPointMake(160, 284)
+        damageLabel.textAlignment = NSTextAlignment.Center
+        damageLabel.text = "\(damageValue)"
+        self.view.addSubview(damageLabel)
+        
+        
+        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+            damageLabel.alpha = 0
+            self.healthBarWidth.constant += 10
+            self.view.layoutIfNeeded()
+            
+            }, completion: nil)
+        
+        
         checkGameOver(superVillain)
     }
     
