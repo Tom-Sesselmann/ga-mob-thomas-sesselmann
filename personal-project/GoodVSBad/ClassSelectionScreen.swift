@@ -12,7 +12,6 @@ class ClassSelectionScreen: UITableViewController {
 
     let classList = ["Warrior", "Mage", "Rogue", "Priest"]
     
-
     // MARK: - Table view delegate
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
@@ -38,9 +37,14 @@ class ClassSelectionScreen: UITableViewController {
         
         // Configure the cell...
         
+        let myImageView = cell.contentView.viewWithTag(1) as! UIImageView
+        myImageView.image = UIImage(named: classList[indexPath.row])
         
-        cell.textLabel!.text = classList[indexPath.row]
-        cell.imageView!.image = UIImage(named: classList[indexPath.row])
+        let myLabel = cell.contentView.viewWithTag(2) as! UILabel
+        myLabel.text = classList[indexPath.row]
+        
+//        cell.textLabel!.text = classList[indexPath.row]
+//        cell.imageView!.image = UIImage(named: classList[indexPath.row])
         
         
         return cell

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nuW-e5-QBW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -45,24 +45,49 @@
         <scene sceneID="HkK-JS-uBt">
             <objects>
                 <tableViewController id="Jzh-Ua-HVv" customClass="ClassSelectionScreen" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mzc-EE-ioq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="mzc-EE-ioq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="classNameCell" textLabel="zHH-Ae-13M" style="IBUITableViewCellStyleDefault" id="A7g-ZA-2p5">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="classNameCell" rowHeight="50" id="A7g-ZA-2p5">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A7g-ZA-2p5" id="aS6-JA-0xu">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zHH-Ae-13M">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJB-Ol-YwJ">
+                                            <rect key="frame" x="58" y="0.0" width="534" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CLn-Aq-V1s">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="qQO-O4-fH1"/>
+                                                <constraint firstAttribute="height" constant="50" id="xBH-4u-wW2"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ah4-Oe-PoU">
+                                            <rect key="frame" x="0.0" y="49" width="600" height="1"/>
+                                            <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="wis-P3-USF"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uJB-Ol-YwJ" secondAttribute="bottom" id="7HC-tv-tza"/>
+                                        <constraint firstItem="uJB-Ol-YwJ" firstAttribute="top" secondItem="aS6-JA-0xu" secondAttribute="top" id="D5Q-Hj-OAq"/>
+                                        <constraint firstAttribute="trailing" secondItem="uJB-Ol-YwJ" secondAttribute="trailing" constant="8" id="MvI-E2-iAe"/>
+                                        <constraint firstItem="uJB-Ol-YwJ" firstAttribute="leading" secondItem="CLn-Aq-V1s" secondAttribute="trailing" constant="8" id="dhk-rY-F7b"/>
+                                        <constraint firstItem="CLn-Aq-V1s" firstAttribute="top" secondItem="aS6-JA-0xu" secondAttribute="top" id="eC4-9k-YYO"/>
+                                        <constraint firstItem="CLn-Aq-V1s" firstAttribute="leading" secondItem="aS6-JA-0xu" secondAttribute="leading" id="isj-JO-TM7"/>
+                                        <constraint firstAttribute="trailing" secondItem="ah4-Oe-PoU" secondAttribute="trailing" id="jP9-zf-DR0"/>
+                                        <constraint firstItem="ah4-Oe-PoU" firstAttribute="leading" secondItem="aS6-JA-0xu" secondAttribute="leading" id="mpl-Wv-g93"/>
+                                        <constraint firstAttribute="bottom" secondItem="ah4-Oe-PoU" secondAttribute="bottom" id="ufp-FK-lwU"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="eVa-xG-gra" kind="show" identifier="showClassInfoScreen" id="Qwn-9x-hMc"/>
@@ -167,8 +192,74 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MR-1P-bpW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmh-CG-pBc" userLabel="Villian Health Bar">
+                                        <rect key="frame" x="300" y="36" width="292" height="20"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-jn-ktg">
+                                                <rect key="frame" x="2" y="2" width="288" height="16"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="zae-XP-4N7"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="zae-XP-4N7"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Xch-jn-ktg" secondAttribute="trailing" constant="2" id="A08-71-oe2"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xch-jn-ktg" secondAttribute="bottom" constant="2" id="G7U-ow-SB9"/>
+                                            <constraint firstAttribute="height" constant="20" id="RNf-mo-Huc"/>
+                                            <constraint firstItem="Xch-jn-ktg" firstAttribute="width" secondItem="Xmh-CG-pBc" secondAttribute="width" constant="-4" id="b2c-fD-fXT"/>
+                                            <constraint firstItem="Xch-jn-ktg" firstAttribute="top" secondItem="Xmh-CG-pBc" secondAttribute="top" constant="2" id="rh9-Mu-sVo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMK-ol-im4" userLabel="Villian Mana Bar" customClass="HealthBar" customModule="GoodVSBad" customModuleProvider="target">
+                                        <rect key="frame" x="300" y="8" width="292" height="20"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6R-Ir-I7x">
+                                                <rect key="frame" x="2" y="2" width="288" height="16"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="m6R-Ir-I7x" secondAttribute="bottom" constant="2" id="27U-Y6-A7G"/>
+                                            <constraint firstAttribute="width" secondItem="m6R-Ir-I7x" secondAttribute="width" constant="4" id="Aym-yn-wHW"/>
+                                            <constraint firstItem="m6R-Ir-I7x" firstAttribute="leading" secondItem="fMK-ol-im4" secondAttribute="leading" constant="2" id="EIH-O0-PRq"/>
+                                            <constraint firstAttribute="height" constant="20" id="Yr7-sy-xr2"/>
+                                            <constraint firstItem="m6R-Ir-I7x" firstAttribute="top" secondItem="fMK-ol-im4" secondAttribute="top" constant="2" id="fFa-L5-13p"/>
+                                            <constraint firstAttribute="width" secondItem="m6R-Ir-I7x" secondAttribute="width" constant="4" id="hCM-Vh-BzB"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Aym-yn-wHW"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Villian" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHx-X1-OXe">
+                                        <rect key="frame" x="497" y="64" width="95" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.86772017050000005" green="0.035852336259999999" blue="0.025733251790000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Xmh-CG-pBc" firstAttribute="top" secondItem="fMK-ol-im4" secondAttribute="bottom" constant="8" id="2aZ-Pn-H59"/>
+                                    <constraint firstItem="fMK-ol-im4" firstAttribute="width" secondItem="6MR-1P-bpW" secondAttribute="width" multiplier="0.5" constant="-8" id="5JI-LC-0Jw"/>
+                                    <constraint firstItem="SHx-X1-OXe" firstAttribute="top" secondItem="Xmh-CG-pBc" secondAttribute="bottom" constant="8" id="LZ2-ev-HpJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="SHx-X1-OXe" secondAttribute="trailing" constant="8" id="NYk-4e-T5z"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xmh-CG-pBc" secondAttribute="trailing" constant="8" id="Q55-Cr-4qK"/>
+                                    <constraint firstItem="fMK-ol-im4" firstAttribute="width" secondItem="Xmh-CG-pBc" secondAttribute="width" id="Xhx-Gn-x18"/>
+                                    <constraint firstItem="fMK-ol-im4" firstAttribute="top" secondItem="6MR-1P-bpW" secondAttribute="top" constant="8" id="mPX-Ds-ejg"/>
+                                    <constraint firstAttribute="trailing" secondItem="fMK-ol-im4" secondAttribute="trailing" constant="8" id="y02-eS-r6f"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="fqM-vl-vBf" appends="YES" id="Zk6-L2-yUy"/>
                                 </connections>
@@ -176,11 +267,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-qn-VqW">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gja-P9-Izl">
-                                        <rect key="frame" x="10" y="270" width="290" height="20"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gja-P9-Izl" userLabel="Hero Mana Bar">
+                                        <rect key="frame" x="10" y="270" width="292" height="20"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuO-Gf-Bk4">
-                                                <rect key="frame" x="2" y="2" width="286" height="16"/>
+                                                <rect key="frame" x="2" y="2" width="288" height="16"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="fIj-j9-AcT"/>
@@ -202,16 +293,16 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Hero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddh-hV-Dgq">
-                                        <rect key="frame" x="10" y="213.5" width="87.5" height="20.5"/>
+                                        <rect key="frame" x="10" y="213" width="88" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-jh-lvj" customClass="HealthBar" customModule="GoodVSBad" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="242" width="290" height="20"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-jh-lvj" userLabel="Hero Health Bar" customClass="HealthBar" customModule="GoodVSBad" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="242" width="292" height="20"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-OO-Lys">
-                                                <rect key="frame" x="2" y="2" width="286" height="16"/>
+                                                <rect key="frame" x="2" y="2" width="288" height="16"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                         </subviews>
@@ -235,13 +326,13 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="gja-P9-Izl" firstAttribute="top" secondItem="BJN-jh-lvj" secondAttribute="bottom" constant="8" id="18C-qm-neN"/>
-                                    <constraint firstItem="gja-P9-Izl" firstAttribute="width" secondItem="hpd-qn-VqW" secondAttribute="width" multiplier="0.5" constant="-10" id="6Nr-UD-XZq"/>
+                                    <constraint firstItem="gja-P9-Izl" firstAttribute="width" secondItem="hpd-qn-VqW" secondAttribute="width" multiplier="0.5" constant="-8" id="6Nr-UD-XZq"/>
                                     <constraint firstItem="ddh-hV-Dgq" firstAttribute="leading" secondItem="hpd-qn-VqW" secondAttribute="leading" constant="10" id="AgL-z9-jY2"/>
                                     <constraint firstItem="BJN-jh-lvj" firstAttribute="leading" secondItem="hpd-qn-VqW" secondAttribute="leading" constant="10" id="Fl9-ZW-g9K"/>
                                     <constraint firstAttribute="bottom" secondItem="gja-P9-Izl" secondAttribute="bottom" constant="10" id="UhD-Dz-G4j"/>
                                     <constraint firstItem="gja-P9-Izl" firstAttribute="leading" secondItem="hpd-qn-VqW" secondAttribute="leading" constant="10" id="auk-FP-qS4"/>
                                     <constraint firstItem="BJN-jh-lvj" firstAttribute="top" secondItem="ddh-hV-Dgq" secondAttribute="bottom" constant="8" id="j7S-Ul-o0Z"/>
-                                    <constraint firstItem="BJN-jh-lvj" firstAttribute="width" secondItem="hpd-qn-VqW" secondAttribute="width" multiplier="0.5" constant="-10" id="ntY-Lf-73J"/>
+                                    <constraint firstItem="BJN-jh-lvj" firstAttribute="width" secondItem="hpd-qn-VqW" secondAttribute="width" multiplier="0.5" constant="-8" id="ntY-Lf-73J"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Y6Q-MN-Zkl" appends="YES" id="156-Ga-LBr"/>
@@ -262,9 +353,10 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="healthBar" destination="Nka-OO-Lys" id="a8D-Xp-7aX"/>
-                        <outlet property="healthBarCnt" destination="BJN-jh-lvj" id="oRl-9k-x3Q"/>
-                        <outlet property="healthBarWidth" destination="5ln-YI-he0" id="tj5-sn-fWO"/>
+                        <outlet property="heroHealthBarCnt" destination="BJN-jh-lvj" id="gLb-0T-9s6"/>
+                        <outlet property="heroHealthBarWidth" destination="5ln-YI-he0" id="mUU-7J-wbG"/>
+                        <outlet property="villianHealthBarCnt" destination="Xmh-CG-pBc" id="sLk-Uz-CkJ"/>
+                        <outlet property="villianHealthBarWidth" destination="b2c-fD-fXT" id="igK-DE-HlY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

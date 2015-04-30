@@ -19,6 +19,7 @@ class Player {
     
     // (Player) -> ()
     func attackOpponent(player: Player) -> Int {
+        if health <= 0 { return 0 }
         let damage = Int(arc4random_uniform(20))
         player.health -= Double(damage)
         
@@ -42,6 +43,7 @@ class Player {
     func checkIfPlayerDied(player: Player) {
         if (player.health <= 0) {
             println("\(player.name) is dead.")
+            player.health = 0
         }
     }
 }
