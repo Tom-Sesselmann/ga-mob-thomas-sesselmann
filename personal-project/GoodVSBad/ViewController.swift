@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         println("Super Hero Attacks")
         let damageValue = superHero.attack(superVillain)
         
-        
         var damageLabel = UILabel(frame: CGRectMake(0, 0, 20, 20))
         damageLabel.center = CGPointMake(160, 284)
         damageLabel.textAlignment = NSTextAlignment.Center
@@ -38,7 +37,8 @@ class ViewController: UIViewController {
         
         UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
             damageLabel.alpha = 0
-            self.healthBarWidth.constant += 10
+            println("\(self.healthBar.frame.width), \(self.superVillain.maxHealth)")
+            self.healthBarWidth.constant = CGFloat(self.superVillain.health / self.superVillain.maxHealth)
             self.view.layoutIfNeeded()
             
             }, completion: nil)

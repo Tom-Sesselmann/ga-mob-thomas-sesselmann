@@ -9,7 +9,8 @@
 import Foundation
 
 class Player {
-    var health = 100
+    let maxHealth = 100.0
+    var health = 100.0
     let name: String
     
     init (name: String) {
@@ -19,7 +20,7 @@ class Player {
     // (Player) -> ()
     func attackOpponent(player: Player) -> Int {
         let damage = Int(arc4random_uniform(20))
-        player.health -= damage
+        player.health -= Double(damage)
         
         checkIfPlayer(player, blockedDamage: damage)
         checkIfPlayerDied(player)
