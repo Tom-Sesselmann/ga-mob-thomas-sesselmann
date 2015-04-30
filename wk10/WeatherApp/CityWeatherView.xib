@@ -1,15 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CityWeatherView" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cityLabel" destination="Gfg-b3-jPs" id="P0o-DI-a28"/>
+                <outlet property="descriptionLabel" destination="EI8-Md-Kcm" id="Y5e-3I-Ybd"/>
+                <outlet property="temperatureLabel" destination="UMj-sH-53p" id="wkb-Xf-rNl"/>
+                <outlet property="weatherImage" destination="aXt-rZ-jlf" id="2jt-4k-XBJ"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sydney" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-b3-jPs">
+                    <rect key="frame" x="14" y="16" width="332" height="51"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-Md-Kcm">
+                    <rect key="frame" x="14" y="75" width="327" height="29"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXt-rZ-jlf">
+                    <rect key="frame" x="349" y="8" width="243" height="243"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aXt-rZ-jlf" secondAttribute="height" multiplier="1:1" id="6H4-2P-ED1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18º" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMj-sH-53p">
+                    <rect key="frame" x="14" y="125" width="327" height="120"/>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="100"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aXt-rZ-jlf" secondAttribute="bottom" constant="8" id="8Rc-0i-ajn"/>
+                <constraint firstItem="aXt-rZ-jlf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="9bD-dZ-7cr"/>
+                <constraint firstAttribute="bottom" secondItem="UMj-sH-53p" secondAttribute="bottom" constant="14" id="ENs-WO-dLy"/>
+                <constraint firstAttribute="trailing" secondItem="aXt-rZ-jlf" secondAttribute="trailing" constant="8" id="OnB-RK-mFV"/>
+                <constraint firstItem="aXt-rZ-jlf" firstAttribute="leading" secondItem="Gfg-b3-jPs" secondAttribute="trailing" constant="3" id="QGI-2I-mGD"/>
+                <constraint firstItem="aXt-rZ-jlf" firstAttribute="leading" secondItem="UMj-sH-53p" secondAttribute="trailing" constant="8" id="TeW-Np-FYa"/>
+                <constraint firstItem="UMj-sH-53p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="d0A-ET-i0I"/>
+                <constraint firstItem="EI8-Md-Kcm" firstAttribute="top" secondItem="Gfg-b3-jPs" secondAttribute="bottom" constant="8" id="fve-C4-etP"/>
+                <constraint firstItem="EI8-Md-Kcm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="h7G-r1-2Ou"/>
+                <constraint firstItem="Gfg-b3-jPs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="jvV-f9-4I9"/>
+                <constraint firstItem="Gfg-b3-jPs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="oMS-9v-cGL"/>
+                <constraint firstItem="aXt-rZ-jlf" firstAttribute="leading" secondItem="EI8-Md-Kcm" secondAttribute="trailing" constant="8" id="r1J-7T-wmW"/>
+                <constraint firstAttribute="bottom" secondItem="aXt-rZ-jlf" secondAttribute="bottom" constant="14" id="y27-jf-UYS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="y27-jf-UYS"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="413" y="236.5"/>
         </view>
     </objects>
 </document>

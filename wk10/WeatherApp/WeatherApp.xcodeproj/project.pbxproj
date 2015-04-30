@@ -14,6 +14,8 @@
 		E9E7F40D1AF21AC600A8876E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E7F40C1AF21AC600A8876E /* Images.xcassets */; };
 		E9E7F4101AF21AC600A8876E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E7F40E1AF21AC600A8876E /* LaunchScreen.xib */; };
 		E9E7F41C1AF21AC600A8876E /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E7F41B1AF21AC600A8876E /* WeatherAppTests.swift */; };
+		E9E7F4261AF21AF000A8876E /* CityWeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E7F4251AF21AF000A8876E /* CityWeatherView.xib */; };
+		E9E7F4281AF21CE500A8876E /* CityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E7F4271AF21CE500A8876E /* CityWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		E9E7F4151AF21AC600A8876E /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E7F41A1AF21AC600A8876E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E7F41B1AF21AC600A8876E /* WeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppTests.swift; sourceTree = "<group>"; };
+		E9E7F4251AF21AF000A8876E /* CityWeatherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityWeatherView.xib; path = ../CityWeatherView.xib; sourceTree = "<group>"; };
+		E9E7F4271AF21CE500A8876E /* CityWeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		E9E7F3FF1AF21AC600A8876E /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				E9E7F4251AF21AF000A8876E /* CityWeatherView.xib */,
 				E9E7F4021AF21AC600A8876E /* AppDelegate.swift */,
 				E9E7F4071AF21AC600A8876E /* ViewController.swift */,
 				E9E7F4091AF21AC600A8876E /* Main.storyboard */,
@@ -86,6 +91,7 @@
 				E9E7F40E1AF21AC600A8876E /* LaunchScreen.xib */,
 				E9E7F4041AF21AC600A8876E /* WeatherApp.xcdatamodeld */,
 				E9E7F4001AF21AC600A8876E /* Supporting Files */,
+				E9E7F4271AF21CE500A8876E /* CityWeatherView.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E7F4261AF21AF000A8876E /* CityWeatherView.xib in Resources */,
 				E9E7F40B1AF21AC600A8876E /* Main.storyboard in Resources */,
 				E9E7F4101AF21AC600A8876E /* LaunchScreen.xib in Resources */,
 				E9E7F40D1AF21AC600A8876E /* Images.xcassets in Resources */,
@@ -215,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E7F4281AF21CE500A8876E /* CityWeatherView.swift in Sources */,
 				E9E7F4081AF21AC600A8876E /* ViewController.swift in Sources */,
 				E9E7F4061AF21AC600A8876E /* WeatherApp.xcdatamodeld in Sources */,
 				E9E7F4031AF21AC600A8876E /* AppDelegate.swift in Sources */,
