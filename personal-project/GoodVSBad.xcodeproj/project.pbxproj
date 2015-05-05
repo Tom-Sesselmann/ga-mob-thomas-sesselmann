@@ -56,6 +56,7 @@
 		D74B6D1E1AB185C400AFDC66 /* NavySailor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavySailor.swift; sourceTree = "<group>"; };
 		E94EDD5F1AC0099C00E7D7AF /* ClassSelectionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectionScreen.swift; sourceTree = "<group>"; };
 		E94EDD611AC036E000E7D7AF /* ClassInfoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassInfoScreen.swift; sourceTree = "<group>"; };
+		E9C8DB701AF8D3C80089D3C5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		E9F70E721AB830B20007AAB4 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		E9F70E741AB831220007AAB4 /* HealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +104,7 @@
 				D74B6CF11AB1853000AFDC66 /* AppDelegate.swift */,
 				D74B6CF31AB1853000AFDC66 /* ViewController.swift */,
 				D74B6CF51AB1853000AFDC66 /* Main.storyboard */,
+				E9C8DB701AF8D3C80089D3C5 /* MyPlayground.playground */,
 				E94EDD5F1AC0099C00E7D7AF /* ClassSelectionScreen.swift */,
 				E9F70E721AB830B20007AAB4 /* StatusBar.swift */,
 				E9F70E741AB831220007AAB4 /* HealthBar.swift */,

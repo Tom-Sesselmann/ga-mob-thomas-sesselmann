@@ -29,9 +29,14 @@ class ViewController: UIViewController {
         println("Super Hero Attacks")
         let damageValue = superHero.attack(superVillain)
         
+        
+        
         var damageLabel = UILabel(frame: CGRectMake(0, 0, 20, 20))
-//        let x = arc4random(Int(self.view.frame.width) - 50) + 25
-        damageLabel.center = CGPointMake(160, 184)
+        let x = arc4random_uniform(UInt32(self.view.frame.width) - 50) + 25
+        let y = arc4random_uniform(UInt32(self.view.frame.height/2) - 50) + 50
+        damageLabel.center = CGPointMake(CGFloat(x), CGFloat(y))
+        
+        
         damageLabel.textAlignment = NSTextAlignment.Center
         damageLabel.text = "\(damageValue)"
         self.view.addSubview(damageLabel)
@@ -39,7 +44,7 @@ class ViewController: UIViewController {
         
         UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
             damageLabel.alpha = 0
-            self.villianHealthBarWidth.constant = -(self.villianHealthBarCnt.frame.width - CGFloat(self.superVillain.health / self.superVillain.maxHealth) * self.villianHealthBarCnt.frame.width)
+            self.villianHealthBarWidth.constant = -(self.villianHealthBarCnt.frame.width + 4 - CGFloat(self.superVillain.health / self.superVillain.maxHealth) * self.villianHealthBarCnt.frame.width)
             self.view.layoutIfNeeded()
             
             }, completion: nil)
@@ -62,7 +67,7 @@ class ViewController: UIViewController {
         
         UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
             damageLabel.alpha = 0
-            self.heroHealthBarWidth.constant = self.heroHealthBarCnt.frame.width - CGFloat(self.superHero.health / self.superHero.maxHealth) * self.heroHealthBarCnt.frame.width
+            self.heroHealthBarWidth.constant = self.heroHealthBarCnt.frame.width + 4 - CGFloat(self.superHero.health / self.superHero.maxHealth) * self.heroHealthBarCnt.frame.width
             self.view.layoutIfNeeded()
             
             }, completion: nil)
