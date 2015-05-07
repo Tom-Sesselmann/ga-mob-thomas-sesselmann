@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nuW-e5-QBW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -355,8 +355,10 @@
                     <connections>
                         <outlet property="heroHealthBarCnt" destination="BJN-jh-lvj" id="gLb-0T-9s6"/>
                         <outlet property="heroHealthBarWidth" destination="5ln-YI-he0" id="mUU-7J-wbG"/>
+                        <outlet property="heroLabel" destination="ddh-hV-Dgq" id="PZL-gT-A1G"/>
                         <outlet property="villianHealthBarCnt" destination="Xmh-CG-pBc" id="sLk-Uz-CkJ"/>
                         <outlet property="villianHealthBarWidth" destination="b2c-fD-fXT" id="igK-DE-HlY"/>
+                        <outlet property="villianLabel" destination="SHx-X1-OXe" id="ux8-tJ-0ce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
