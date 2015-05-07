@@ -36,15 +36,20 @@ class ViewController: UIViewController {
         let damageValue = superHero.attack(superVillain)
         
         // Make Damage Label
-        var damageLabel = UILabel(frame: CGRectMake(0, 0, 40, 20))
+        var damageLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
         let x = arc4random_uniform(UInt32(self.view.frame.width) - 50) + 25
         let y = arc4random_uniform(UInt32(self.view.frame.height/2) - 150) + 150
         damageLabel.center = CGPointMake(CGFloat(x), CGFloat(y))
         damageLabel.textAlignment = NSTextAlignment.Center
-        damageLabel.text = "\(damageValue)"
-        damageLabel.font = UIFont(name: damageLabel.font.fontName, size: CGFloat(damageValue/2+10))
-        damageLabel.textColor = UIColor.whiteColor()
-        damageLabel.shadowColor = UIColor.blackColor()
+        damageLabel.font = UIFont(name: damageLabel.font.fontName, size: CGFloat(damageValue/2+20))
+        if damageValue == 0 {
+            damageLabel.text = "BLOCKED"
+            damageLabel.textColor = UIColor.whiteColor()
+        } else {
+            damageLabel.text = "-\(damageValue)"
+            damageLabel.textColor = UIColor.redColor()
+        }
+//        damageLabel.shadowColor = UIColor.blackColor()
         damageLabel.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
         self.view.addSubview(damageLabel)
         
@@ -68,15 +73,21 @@ class ViewController: UIViewController {
         let damageValue = superVillain.attack(superHero)
         
         // Make Damage Label
-        var damageLabel = UILabel(frame: CGRectMake(0, 0, 40, 20))
+        var damageLabel = UILabel(frame: CGRectMake(0, 0, 200, 30))
         let x = arc4random_uniform(UInt32(self.view.frame.width) - 50) + 25
         let y = arc4random_uniform(UInt32(self.view.frame.height/2) - 150) + UInt32(self.view.frame.height/2)
         damageLabel.center = CGPointMake(CGFloat(x), CGFloat(y))
         damageLabel.textAlignment = NSTextAlignment.Center
-        damageLabel.text = "\(damageValue)"
-        damageLabel.font = UIFont(name: damageLabel.font.fontName, size: CGFloat(damageValue/2+10))
-        damageLabel.textColor = UIColor.whiteColor()
-        damageLabel.shadowColor = UIColor.blackColor()
+        damageLabel.font = UIFont(name: damageLabel.font.fontName, size: CGFloat(damageValue/2+20))
+        damageLabel.text = "-\(damageValue)"
+        if damageValue == 0 {
+            damageLabel.text = "BLOCKED"
+            damageLabel.textColor = UIColor.whiteColor()
+        } else {
+            damageLabel.text = "-\(damageValue)"
+            damageLabel.textColor = UIColor.redColor()
+        }
+//        damageLabel.shadowColor = UIColor.blackColor()
         self.view.addSubview(damageLabel)
         
         // Animate Health Bar and Damage Label
