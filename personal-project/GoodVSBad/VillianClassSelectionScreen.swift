@@ -10,8 +10,7 @@ import UIKit
 
 class VillianClassSelectionScreen: UITableViewController {
     
-    let classList = ["Gladiator", "Sorcerer", "Theif", "Warlock"]
-    
+    let classList = ["Gladiator", "Sorcerer", "Thief", "Warlock"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +18,6 @@ class VillianClassSelectionScreen: UITableViewController {
 //        self.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
         
         self.parentViewController?.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
-        
     }
     
     // MARK: - Table view delegate
