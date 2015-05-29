@@ -26,7 +26,6 @@
                                 </state>
                                 <connections>
                                     <action selector="newGame:" destination="nuW-e5-QBW" eventType="touchUpInside" id="0k7-ca-szJ"/>
-                                    <segue destination="rYN-wv-D2U" kind="show" id="Rnu-yp-dUH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +37,9 @@
                             <constraint firstItem="9T4-db-fJg" firstAttribute="leading" secondItem="AzO-vx-MML" secondAttribute="leading" id="sqI-Tv-ZDk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="rYN-wv-D2U" kind="show" identifier="showSplitScreen" id="UgW-2J-Wmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYD-j1-DAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,15 +8,19 @@
 
 import UIKit
 import CoreData
+import GameKit
 
 var currentGame: Game!
 var appDelegate: AppDelegate?
 
+var gameCenterEnabled: Bool = false
+var leaderboardIdentifier: String?
+
 class MenuScreen: UIViewController {
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        authenticateLocalPlayer()
         
         appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
     }
@@ -31,6 +35,31 @@ class MenuScreen: UIViewController {
         currentGame = NSEntityDescription.insertNewObjectForEntityForName("Game", inManagedObjectContext: appDelegate!.managedObjectContext!) as! Game
         currentGame.createdAt = NSDate()
         appDelegate?.saveContext()
+        performSegueWithIdentifier("showSplitScreen", sender: self)
+    }
+    
+    func authenticateLocalPlayer() {
+        var localPlayer = GKLocalPlayer()
+        localPlayer.authenticateHandler = {(viewController : UIViewController!, error : NSError!) -> Void in
+            if viewController != nil {
+                self.presentViewController(viewController, animated: true, completion: nil)
+            } else {
+                if localPlayer.authenticated {
+                    gameCenterEnabled = true
+                    
+                    localPlayer.loadDefaultLeaderboardIdentifierWithCompletionHandler({ (leaderboardIdentifierInput : String!, error : NSError!) -> Void in
+                        if error != nil {
+                            println(error.localizedDescription)
+                        } else {
+                            leaderboardIdentifier = leaderboardIdentifierInput
+                        }
+                    })
+                    
+                } else {
+                    gameCenterEnabled = false
+                }
+            }
+        }
     }
 
     /*

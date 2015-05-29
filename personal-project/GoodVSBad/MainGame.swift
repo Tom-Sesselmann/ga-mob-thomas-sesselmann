@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import GameKit
 
 class MainGame: UIViewController {
     
@@ -24,7 +25,7 @@ class MainGame: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+//        modalTransitionStyle = UIModalTransitionStyle.CoverVertical
         heroLabel.text = superHero.name
         villianLabel.text = superVillain.name
         villianLabel.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
@@ -108,7 +109,14 @@ class MainGame: UIViewController {
             
             // Save results
             currentGame.winner = player.name
-            appDelegate?.saveContext()            
+            appDelegate?.saveContext()
+            
+            // Report Score to Game Center
+            if gameCenterEnabled {
+                let score = GKScore(leaderboardIdentifier: leaderboardIdentifier)
+                score.value = Int64(arc4random_uniform(1000))
+                GKScore.reportScores([score], withCompletionHandler: nil)
+            }
             
             
             // Create PopUp
