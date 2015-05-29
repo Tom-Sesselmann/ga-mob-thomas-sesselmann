@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rYN-wv-D2U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nuW-e5-QBW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu Screen-->
         <scene sceneID="SY8-fp-rnp">
             <objects>
-                <viewController id="nuW-e5-QBW" sceneMemberID="viewController">
+                <viewController id="nuW-e5-QBW" customClass="MenuScreen" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hVh-0K-UhN"/>
                         <viewControllerLayoutGuide type="bottom" id="fkT-w3-fDU"/>
@@ -25,6 +25,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="newGame:" destination="nuW-e5-QBW" eventType="touchUpInside" id="0k7-ca-szJ"/>
                                     <segue destination="rYN-wv-D2U" kind="show" id="Rnu-yp-dUH"/>
                                 </connections>
                             </button>
@@ -209,6 +210,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="VIF-9l-qMB" kind="show" identifier="villianIsReady" id="X3K-DK-8kb"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="classDescriptionCell" textLabel="YLk-Me-oMi" detailTextLabel="HTh-Dv-yl6" style="IBUITableViewCellStyleSubtitle" id="m4W-fl-nt9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -241,7 +245,7 @@
                     <navigationItem key="navigationItem" title="Title" id="JoB-D7-tuh">
                         <barButtonItem key="rightBarButtonItem" title="Accept" id="LPb-Wz-ilt">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" id="9TI-ni-To4"/>
+                                <action selector="acceptClicked:" destination="eVa-xG-gra" id="ykX-KU-2Hr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -252,6 +256,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrL-Wb-1Oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1343" y="211"/>
+        </scene>
+        <!--Ready!-->
+        <scene sceneID="PwJ-Xe-HdX">
+            <objects>
+                <viewController id="VIF-9l-qMB" customClass="VillianReadyScreen" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mgd-U9-4ZX"/>
+                        <viewControllerLayoutGuide type="bottom" id="bm7-F9-A00"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ruz-eH-1lZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ready!" id="Yvr-Xy-3By"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2o-RX-oFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="211"/>
+        </scene>
+        <!--Ready!-->
+        <scene sceneID="ih6-El-WtH">
+            <objects>
+                <viewController id="4Q7-xv-4DJ" customClass="HeroReadyScreen" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QFb-Dk-Q2j"/>
+                        <viewControllerLayoutGuide type="bottom" id="g0X-Hi-uJl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GUp-Pd-pj3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ready!" id="szJ-oX-L3w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJf-PL-Gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="641"/>
         </scene>
         <!--Title-->
         <scene sceneID="eHh-pi-8Sg">
@@ -313,20 +355,25 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="K9o-dl-EFT">
-                        <barButtonItem key="rightBarButtonItem" title="Accept" id="7p2-KZ-Zk6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Accept" id="7p2-KZ-Zk6">
+                            <connections>
+                                <action selector="acceptClicked:" destination="Bad-60-fyg" id="cJf-yD-09x"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="navItem" destination="K9o-dl-EFT" id="4pG-z9-nWZ"/>
+                        <segue destination="4Q7-xv-4DJ" kind="show" identifier="heroIsReady" id="Zqq-FZ-YH4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybf-I2-pRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1343" y="641"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainGame" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -518,7 +565,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2207" y="451"/>
+            <point key="canvasLocation" x="-815" y="1164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KMJ-tv-Vfp">
@@ -538,10 +585,10 @@
             </objects>
             <point key="canvasLocation" x="-109" y="211"/>
         </scene>
-        <!--View Controller-->
+        <!--Split Screen View Controller-->
         <scene sceneID="wNQ-sZ-VR1">
             <objects>
-                <viewController id="rYN-wv-D2U" sceneMemberID="viewController">
+                <viewController id="rYN-wv-D2U" customClass="SplitScreenViewController" customModule="GoodVSBad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8HV-T2-gcw"/>
                         <viewControllerLayoutGuide type="bottom" id="XYO-Us-iD7"/>
@@ -582,6 +629,9 @@
                             <constraint firstItem="XYO-Us-iD7" firstAttribute="top" secondItem="BWE-mB-iPF" secondAttribute="bottom" id="wBD-fw-gBz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="startGame" id="Xpk-Et-3aS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRC-7p-cws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

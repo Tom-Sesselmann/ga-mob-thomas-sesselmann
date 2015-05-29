@@ -62,4 +62,10 @@ class VillianClassInfoScreen: UITableViewController {
         
     }
     
+    @IBAction func acceptClicked(sender: AnyObject) {
+        currentGame.villianClass = className!
+        appDelegate?.saveContext()
+        
+        self.performSegueWithIdentifier("villianIsReady", sender: self)
+    }
 }

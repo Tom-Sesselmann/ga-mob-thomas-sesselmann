@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D74B6CF21AB1853000AFDC66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6CF11AB1853000AFDC66 /* AppDelegate.swift */; };
-		D74B6CF41AB1853000AFDC66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6CF31AB1853000AFDC66 /* ViewController.swift */; };
+		D74B6CF41AB1853000AFDC66 /* MainGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6CF31AB1853000AFDC66 /* MainGame.swift */; };
 		D74B6CF71AB1853000AFDC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74B6CF51AB1853000AFDC66 /* Main.storyboard */; };
 		D74B6CF91AB1853000AFDC66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74B6CF81AB1853000AFDC66 /* Images.xcassets */; };
 		D74B6CFC1AB1853000AFDC66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74B6CFA1AB1853000AFDC66 /* LaunchScreen.xib */; };
@@ -24,6 +24,12 @@
 		E92924C21AFB6614003B7812 /* VillianClassInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92924C11AFB6614003B7812 /* VillianClassInfoScreen.swift */; };
 		E94EDD601AC0099C00E7D7AF /* HeroClassSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94EDD5F1AC0099C00E7D7AF /* HeroClassSelectionScreen.swift */; };
 		E94EDD621AC036E000E7D7AF /* HeroClassInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94EDD611AC036E000E7D7AF /* HeroClassInfoScreen.swift */; };
+		E959FEEC1B18957F002C5853 /* SplitScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E959FEEB1B18957F002C5853 /* SplitScreenViewController.swift */; };
+		E9769FDE1B1870B5004B47E6 /* GameModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9769FDC1B1870B5004B47E6 /* GameModel.xcdatamodeld */; };
+		E9769FE01B187314004B47E6 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9769FDF1B187314004B47E6 /* MenuScreen.swift */; };
+		E9769FE21B187DBE004B47E6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9769FE11B187DBE004B47E6 /* Game.swift */; };
+		E9769FE41B18817F004B47E6 /* VillianReadyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9769FE31B18817F004B47E6 /* VillianReadyScreen.swift */; };
+		E9769FE61B1881D2004B47E6 /* HeroReadyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9769FE51B1881D2004B47E6 /* HeroReadyScreen.swift */; };
 		E9F70E731AB830B20007AAB4 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F70E721AB830B20007AAB4 /* StatusBar.swift */; };
 		E9F70E751AB831220007AAB4 /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F70E741AB831220007AAB4 /* HealthBar.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +48,7 @@
 		D74B6CEC1AB1853000AFDC66 /* GoodVSBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodVSBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74B6CF01AB1853000AFDC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D74B6CF11AB1853000AFDC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D74B6CF31AB1853000AFDC66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D74B6CF31AB1853000AFDC66 /* MainGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGame.swift; sourceTree = "<group>"; };
 		D74B6CF61AB1853000AFDC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D74B6CF81AB1853000AFDC66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D74B6CFB1AB1853000AFDC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +66,12 @@
 		E92924C11AFB6614003B7812 /* VillianClassInfoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillianClassInfoScreen.swift; sourceTree = "<group>"; };
 		E94EDD5F1AC0099C00E7D7AF /* HeroClassSelectionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroClassSelectionScreen.swift; sourceTree = "<group>"; };
 		E94EDD611AC036E000E7D7AF /* HeroClassInfoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroClassInfoScreen.swift; sourceTree = "<group>"; };
+		E959FEEB1B18957F002C5853 /* SplitScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitScreenViewController.swift; sourceTree = "<group>"; };
+		E9769FDD1B1870B5004B47E6 /* GameModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameModel.xcdatamodel; sourceTree = "<group>"; };
+		E9769FDF1B187314004B47E6 /* MenuScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		E9769FE11B187DBE004B47E6 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E9769FE31B18817F004B47E6 /* VillianReadyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillianReadyScreen.swift; sourceTree = "<group>"; };
+		E9769FE51B1881D2004B47E6 /* HeroReadyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroReadyScreen.swift; sourceTree = "<group>"; };
 		E9C8DB701AF8D3C80089D3C5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		E9F70E721AB830B20007AAB4 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		E9F70E741AB831220007AAB4 /* HealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
@@ -104,15 +116,21 @@
 		D74B6CEE1AB1853000AFDC66 /* GoodVSBad */ = {
 			isa = PBXGroup;
 			children = (
+				E9769FE11B187DBE004B47E6 /* Game.swift */,
 				D74B6D111AB1853900AFDC66 /* Models */,
 				D74B6CF11AB1853000AFDC66 /* AppDelegate.swift */,
-				D74B6CF31AB1853000AFDC66 /* ViewController.swift */,
+				E9769FDC1B1870B5004B47E6 /* GameModel.xcdatamodeld */,
+				D74B6CF31AB1853000AFDC66 /* MainGame.swift */,
 				D74B6CF51AB1853000AFDC66 /* Main.storyboard */,
+				E9769FE51B1881D2004B47E6 /* HeroReadyScreen.swift */,
+				E9769FDF1B187314004B47E6 /* MenuScreen.swift */,
 				E9C8DB701AF8D3C80089D3C5 /* MyPlayground.playground */,
+				E959FEEB1B18957F002C5853 /* SplitScreenViewController.swift */,
 				E94EDD5F1AC0099C00E7D7AF /* HeroClassSelectionScreen.swift */,
 				E92924BF1AFB65CE003B7812 /* VillianClassSelectionScreen.swift */,
 				E94EDD611AC036E000E7D7AF /* HeroClassInfoScreen.swift */,
 				E92924C11AFB6614003B7812 /* VillianClassInfoScreen.swift */,
+				E9769FE31B18817F004B47E6 /* VillianReadyScreen.swift */,
 				E9F70E721AB830B20007AAB4 /* StatusBar.swift */,
 				E9F70E741AB831220007AAB4 /* HealthBar.swift */,
 				D74B6CF81AB1853000AFDC66 /* Images.xcassets */,
@@ -263,20 +281,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74B6D191AB1858F00AFDC66 /* Pirate.swift in Sources */,
-				D74B6CF41AB1853000AFDC66 /* ViewController.swift in Sources */,
+				E9769FE21B187DBE004B47E6 /* Game.swift in Sources */,
+				D74B6CF41AB1853000AFDC66 /* MainGame.swift in Sources */,
+				E9769FE41B18817F004B47E6 /* VillianReadyScreen.swift in Sources */,
 				D74B6D131AB1854E00AFDC66 /* Player.swift in Sources */,
 				D74B6D151AB1856400AFDC66 /* GoodGuy.swift in Sources */,
 				D74B6D171AB1857A00AFDC66 /* BadGuy.swift in Sources */,
 				E94EDD601AC0099C00E7D7AF /* HeroClassSelectionScreen.swift in Sources */,
+				E959FEEC1B18957F002C5853 /* SplitScreenViewController.swift in Sources */,
 				E94EDD621AC036E000E7D7AF /* HeroClassInfoScreen.swift in Sources */,
+				E9769FE01B187314004B47E6 /* MenuScreen.swift in Sources */,
 				E9F70E731AB830B20007AAB4 /* StatusBar.swift in Sources */,
 				D74B6CF21AB1853000AFDC66 /* AppDelegate.swift in Sources */,
+				E9769FDE1B1870B5004B47E6 /* GameModel.xcdatamodeld in Sources */,
 				E9F70E751AB831220007AAB4 /* HealthBar.swift in Sources */,
 				D74B6D1B1AB185A500AFDC66 /* SuperVillain.swift in Sources */,
 				E92924C21AFB6614003B7812 /* VillianClassInfoScreen.swift in Sources */,
 				D74B6D1F1AB185C400AFDC66 /* NavySailor.swift in Sources */,
 				D74B6D1D1AB185B500AFDC66 /* SuperHero.swift in Sources */,
 				E92924C01AFB65CF003B7812 /* VillianClassSelectionScreen.swift in Sources */,
+				E9769FE61B1881D2004B47E6 /* HeroReadyScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +510,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9769FDC1B1870B5004B47E6 /* GameModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9769FDD1B1870B5004B47E6 /* GameModel.xcdatamodel */,
+			);
+			currentVersion = E9769FDD1B1870B5004B47E6 /* GameModel.xcdatamodel */;
+			path = GameModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D74B6CE41AB1853000AFDC66 /* Project object */;
 }

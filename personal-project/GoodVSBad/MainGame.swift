@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainGame.swift
 //  GoodVSBad
 //
 //  Created by Jack Watson-Hamblin on 12/03/2015.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+class MainGame: UIViewController {
     
     @IBOutlet weak var heroHealthBarWidth: NSLayoutConstraint!
     @IBOutlet weak var heroHealthBarCnt: HealthBar!
@@ -18,16 +19,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var villianLabel: UILabel!
     
     
-    let superHero = SuperHero(name: "Superman")
-    let superVillain = SuperVillain(name: "Batman")
+    let superHero = SuperHero(name: currentGame.heroClass!)
+    let superVillain = SuperVillain(name: currentGame.villianClass!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        modalTransitionStyle = UIModalTransitionStyle.CoverVertical
         heroLabel.text = superHero.name
         villianLabel.text = superVillain.name
         villianLabel.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
-        
     }
 
     @IBAction func superHeroAttack(sender: AnyObject) {
@@ -106,8 +106,20 @@ class ViewController: UIViewController {
     func checkGameOver(player : Player) {
         if player.health <= 0 {
             
+            // Save results
+            currentGame.winner = player.name
+            appDelegate?.saveContext()            
+            
+            
+            // Create PopUp
             var alert = UIAlertController(title: "Game Over!", message: "\(player.name) is DEAD", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "New Game", style: UIAlertActionStyle.Default) { alert in
+                
+                // Create New Game Model
+                currentGame = NSEntityDescription.insertNewObjectForEntityForName("Game", inManagedObjectContext: appDelegate!.managedObjectContext!) as! Game
+                currentGame.createdAt = NSDate()
+                appDelegate?.saveContext()
+                
                 self.dismissViewControllerAnimated(true, completion: nil)
                 })
             self.presentViewController(alert, animated: true, completion: nil)

@@ -8,9 +8,17 @@
 
 import UIKit
 
+var heroNavigationController: UINavigationController!
+
 class HeroClassSelectionScreen: UITableViewController {
 
     let classList = ["Warrior", "Mage", "Rogue", "Priest"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        heroNavigationController = self.navigationController
+    }
     
     // MARK: - Table view delegate
     

@@ -8,6 +8,8 @@
 
 import UIKit
 
+var villianNavigationController: UINavigationController!
+
 class VillianClassSelectionScreen: UITableViewController {
     
     let classList = ["Gladiator", "Sorcerer", "Thief", "Warlock"]
@@ -15,7 +17,7 @@ class VillianClassSelectionScreen: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+        villianNavigationController = self.navigationController
         
         self.parentViewController?.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
     }

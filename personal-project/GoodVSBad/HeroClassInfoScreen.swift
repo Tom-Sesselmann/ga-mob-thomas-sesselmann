@@ -62,4 +62,10 @@ class HeroClassInfoScreen: UITableViewController {
         
     }
 
+    @IBAction func acceptClicked(sender: AnyObject) {
+        currentGame.heroClass = className!
+        appDelegate?.saveContext()
+        
+        self.performSegueWithIdentifier("heroIsReady", sender: self)
+    }
 }
