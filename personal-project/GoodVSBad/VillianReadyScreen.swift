@@ -24,6 +24,12 @@ class VillianReadyScreen: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        
+        // Reset selected class
+        currentGame.villianClass = nil
+    }
+    
 
     
     // MARK: - Navigation

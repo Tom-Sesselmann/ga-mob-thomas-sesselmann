@@ -20,8 +20,8 @@ class MainGame: UIViewController {
     @IBOutlet weak var villianLabel: UILabel!
     
     
-    let superHero = SuperHero(name: currentGame.heroClass!)
-    let superVillain = SuperVillain(name: currentGame.villianClass!)
+    let superHero = GoodGuy(name: currentGame.heroClass!)
+    let superVillain = BadGuy(name: currentGame.villianClass!)
 
     override func viewDidLoad() {
         super.viewDidLoad()

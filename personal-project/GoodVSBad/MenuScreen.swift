@@ -17,12 +17,20 @@ var gameCenterEnabled: Bool = false
 var leaderboardIdentifier: String?
 
 class MenuScreen: UIViewController {
+    
+    @IBOutlet weak var startGameButton: UIButton!    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         authenticateLocalPlayer()
         
         appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        
+        
+        UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.startGameButton.center = CGPoint(x: self.startGameButton.center.x, y: self.startGameButton.center.y + self.view.bounds.height/2)
+            
+            }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
