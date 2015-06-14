@@ -20,14 +20,7 @@ class HeroClassInfoScreen: UITableViewController {
         super.viewDidLoad()
         
         self.navItem.title = className
-        // self.tableView.backgroundView = UIImageView(image: UIImage(named: className!))
         
-    }
-    
-    // MARK: - Table view delegate
-    
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//        println("\(classList[indexPath.row])")
     }
     
     // MARK: - Table view data source

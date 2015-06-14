@@ -500,7 +500,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-jh-lvj" userLabel="Hero Health Bar" customClass="HealthBar" customModule="GoodVSBad" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-jh-lvj" userLabel="Hero Health Bar">
                                         <rect key="frame" x="10" y="242" width="292" height="20"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-OO-Lys">

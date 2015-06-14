@@ -22,18 +22,7 @@ class VillianClassSelectionScreen: UITableViewController {
         self.parentViewController?.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
     }
     
-    // MARK: - Table view delegate
-    
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        println("\(classList[indexPath.row])")
-    }
-    
     // MARK: - Table view data source
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // Return the number of sections.
-        return 1
-    }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
@@ -52,9 +41,6 @@ class VillianClassSelectionScreen: UITableViewController {
         
         let myLabel = cell.contentView.viewWithTag(2) as! UILabel
         myLabel.text = classList[indexPath.row]
-        
-        //        cell.textLabel!.text = classList[indexPath.row]
-        //        cell.imageView!.image = UIImage(named: classList[indexPath.row])
         
         
         return cell
