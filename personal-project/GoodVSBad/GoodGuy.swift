@@ -9,7 +9,7 @@
 import Foundation
 
 class GoodGuy : Player {
-    func attack(player: BadGuy) -> Int {
-        return super.attackOpponent(player)
+    func attack(player: BadGuy) -> Double {
+        return super.attack(player)
     }
 }

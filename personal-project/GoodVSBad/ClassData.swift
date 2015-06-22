@@ -1,10 +1,9 @@
 //
-//  Player.swift
+//  ClassData.swift
 //  GoodVSBad
 //
-//  Created by Jack Watson-Hamblin on 12/03/2015.
+//  Created by Thomas Sesselmann on 14/06/2015.
 //  Copyright (c) 2015 ACME Inc. All rights reserved.
-//
 //
 //  ===================
 //  Classes
@@ -142,28 +141,5 @@
 
 import Foundation
 
-class Player {
-    var maxHealth : Double = 100.0
-    var health : Double = 100.0
-    var maxMana : Double = 100.0
-    var mana : Double = 100.0
-    var initAttackPower : Double = 10.0
-    var attackPower : Double = 10.0
-    var name: String = "default"
-    
-    func attack(player: Player) -> Double {
-        if health <= 0 { return 0 }
-        let damage = attackPower// + Double(arc4random_uniform(attackPower/5))
-        player.health -= Double(damage)
-        
-        checkIfPlayerDied(player)
-        return damage
-    }
-    
-    func checkIfPlayerDied(player: Player) {
-        if (player.health <= 0) {
-            println("\(player.name) is dead.")
-            player.health = 0
-        }
-    }
-}
+let all = Class(name: "Warrior")
+
